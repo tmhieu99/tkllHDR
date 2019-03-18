@@ -1,8 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-const string IMAGES_DATA = "images.txt";
-const string LABELS_DATA = "labels.txt";
+const string IMAGES_DATA = "../images.txt";
+const string LABELS_DATA = "../labels.txt";
+const string FILE_OUT = "KNN_output.txt";
 
 int images[10000][28*28];
 int labels[10000];
@@ -22,12 +23,13 @@ void readData(){
     lbl_in.close();
 }
 void KNN(){
-    int K = 9;
-    int ntest = 10;
+    ofstream out(FILE_OUT);
+    int K = 9; // K-nearest neighbour
+    int N = 10; // Number of test
     double distance = 0;
     pair<double, int> result[K]; // <distance, label> 
     
-    for (int n = 9000 ; n < 9000 + ntest; ++n){
+    for (int n = 9000 ; n < 9000 + N; ++n){
         // Init 
         for (int i = 0 ; i < K ; ++i){
             result[i] = {255*255 + 1, -1};
@@ -36,9 +38,9 @@ void KNN(){
         // Print digit image
         for (int i = 0 ; i < 28 ; ++i){
             for (int j = 0 ; j < 28 ; ++j){
-                cout << setw(3) << left << images[n][i*28 + j];
+                out << setw(3) << left << images[n][i*28 + j];
             }
-            cout << endl;
+            out << endl;
         }
 
         // Calculate distances from current digit to other labels
@@ -63,16 +65,14 @@ void KNN(){
         }
 
         // Print prediction result
-        cout << K << " nearest neighbours" << endl;
-        cout << "(" << result[0].second;
-        for (int i = 1 ; i < K ; ++i){
-            cout << ", " << result[i].second; 
-        }
-        cout << ")" << endl;
+        out << K << " nearest neighbours" << endl;
+        out << "(" << result[0].second;
+        for (int i = 1 ; i < K ; ++i)
+            out << ", " << result[i].second; 
+        out << ")" << endl;
 
         // Print exact result
-        cout << "Exact result: " << labels[n] << endl;
-        cout << endl;
+        out << "Exact result: " << labels[n] << endl << endl;
     }
 }
 int main(){
