@@ -1,6 +1,8 @@
-# onedigit branch
-
+# Handwritten Digit Recognition
 By recognizing the whole handwriting words, we first attempt to recognize single digit first.
 
-This branch use MNIST database and various Machine Learning algorithms to recognize digits.
+We use [MNIST](http://yann.lecun.com/exdb/mnist/) database with various Machine Learning algorithms to solve the stated problem.
 
+Algorithms that we used:
+
+  * K Nearest Neighbor
