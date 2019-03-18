@@ -5,4 +5,4 @@ We use [MNIST](http://yann.lecun.com/exdb/mnist/) database with various Machine 
 
 Algorithms that we used:
 
-  * K Nearest Neighbor
+  * [K Nearest Neighbor](https://github.com/dangne/damhtkll/tree/onedigit/KNN)
