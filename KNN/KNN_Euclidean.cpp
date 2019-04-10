@@ -13,8 +13,7 @@ using namespace std;
 #define DETAILS_OUT     "details_E.txt"
 #define MAXN            10000                   // Size of the dataset 
 #define TRAIN_SET_SIZE  ((int)(MAXN*0.9))       // 90% of the dataset
-//#define TEST_SET_SIZE   MAXN - TRAIN_SET_SIZE   // The rest
-#define TEST_SET_SIZE   10
+#define TEST_SET_SIZE   MAXN - TRAIN_SET_SIZE   // The rest
 #define S_TEST          0
 #define T_TEST          TEST_SET_SIZE
 #define S_TRAINING      TEST_SET_SIZE
