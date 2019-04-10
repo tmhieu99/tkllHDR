@@ -1,0 +1,20 @@
+Predict: 5       Result: Correct
+
+Predict: 0       Result: Correct
+
+Predict: 4       Result: Correct
+
+Predict: 1       Result: Correct
+
+Predict: 9       Result: Correct
+
+Predict: 2       Result: Correct
+
+Predict: 1       Result: Correct
+
+Predict: 3       Result: Correct
+
+Predict: 1       Result: Correct
+
+Predict: 4       Result: Correct
+

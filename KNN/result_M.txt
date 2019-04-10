@@ -1,0 +1,2 @@
+No. of correct: 9/10
+Error rate: 0.1
