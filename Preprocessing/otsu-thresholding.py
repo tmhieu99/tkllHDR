@@ -9,7 +9,7 @@ for i in range(5):
 
     cv2.bitwise_not(res[i], res[i])
 
-    cv2.imwrite('otsu-thresholding-test' + str(i) + '.png', res[i])
+    cv2.imwrite('res/otsu-thresholding-test' + str(i) + '.png', res[i])
     cv2.imshow('test' + str(i), res[i])
 
 cv2.waitKey()
