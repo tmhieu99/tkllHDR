@@ -8,7 +8,7 @@ def Picture(image_name, greyscale = True):
     image = cv2.imread(image_name, not greyscale) 
     if not greyscale:
         b, g, r = cv2.split(image)
-        self.image = cv2.merge((r, g, b))
+        image = cv2.merge((r, g, b))
     image = Image.fromarray(image)
     image = ImageTk.PhotoImage(image=image) 
     return image
