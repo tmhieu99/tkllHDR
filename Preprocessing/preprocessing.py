@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('img/test1.jpg', 0)
+img = cv2.imread('img/test3.jpg', 0)
 res = img
 
 # Noise reduction
