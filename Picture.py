@@ -4,15 +4,14 @@ from PIL import Image, ImageTk
 import cv2
 import numpy as np
 
-class Picture:
-    def __init__(self, image_name, greyscale = True):
-        self.image = cv2.imread(image_name, not greyscale) 
-        if not greyscale:
-            b, g, r = cv2.split(self.image)
-            self.image = cv2.merge((r, g, b))
-        self.image = Image.fromarray(self.image)
-        self.image = ImageTk.PhotoImage(image=self.image) 
-
+def Picture(image_name, greyscale = True):
+    image = cv2.imread(image_name, not greyscale) 
+    if not greyscale:
+        b, g, r = cv2.split(image)
+        self.image = cv2.merge((r, g, b))
+    image = Image.fromarray(image)
+    image = ImageTk.PhotoImage(image=image) 
+    return image
 
 if __name__ == "__main__":
     def import_image():
@@ -24,7 +23,7 @@ if __name__ == "__main__":
         if len(filename) > 0:
             global img
             global image
-            img = Picture(filename, greyscale.get()).image
+            img = Picture(filename, greyscale.get())
             image = Label(root, image = img)
             image.grid(row = 1, column = 0, columnspan = 2, sticky = W) 
 
