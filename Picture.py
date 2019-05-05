@@ -2,20 +2,20 @@ from tkinter import *
 from tkinter.filedialog import askopenfilename
 from PIL import Image, ImageTk
 import cv2
-import numpy as np
 import serial
+import numpy as np
 import glob
 import sys
 
+
 def Picture(image_name, greyscale = True):
-    image = cv2.imread(image_name, not greyscale) 
+    image = cv2.imread(image_name, not greyscale)
     if not greyscale:
         b, g, r = cv2.split(image)
         image = cv2.merge((r, g, b))
     image = Image.fromarray(image)
-    image = ImageTk.PhotoImage(image=image) 
+    image = ImageTk.PhotoImage(image=image)
     return image
-
 def available_ports():
     if sys.platform.startswith('win'):
         ports = ['COM%s' % (i + 1) for i in range(256)]
@@ -36,7 +36,6 @@ def available_ports():
         except (OSError, serial.SerialException):
             pass
     return result
-
 if __name__ == "__main__":
     def import_image():
         filename = askopenfilename( initialdir = "./",
@@ -49,7 +48,11 @@ if __name__ == "__main__":
             global image
             img = Picture(filename, greyscale.get())
             image.config(image = img)
-
+  
+    def push_image():
+        img = img.reshape(img.shape[0]*img.shape[1])
+        ser = serial.Serial(port='', baudrate=115200)
+        ser.write(img)
     # Setup window
     root = Tk()
     root.config(bg = 'white')
@@ -69,10 +72,12 @@ if __name__ == "__main__":
     b_import    = Button(root, bg = 'white', text = 'Import image', command = import_image)
     b_greyscale = Checkbutton(root, bg = 'white', variable = greyscale, text = 'Greyscale')
     b_greyscale.select()
+    b_push = Button(root, bg='white', text='Push', command = push_image)
 
     # Positioning
     b_import.grid(row = 0, column = 1)
-    b_greyscale.grid(row = 0, column = 2)
+    b_push.grid(row=0, column = 2, sticky = W)
+    b_greyscale.grid(row = 0, column = 3)
     image.grid(row = 1, column = 0, columnspan = 2, sticky = W) 
 
     # Main loop
