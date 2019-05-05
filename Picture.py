@@ -53,6 +53,14 @@ if __name__ == "__main__":
         img = img.reshape(img.shape[0]*img.shape[1])
         ser = serial.Serial(port='', baudrate=115200)
         ser.write(img)
+        
+    def updatePort(chosenPort):
+        try:
+            s = serial.Serial(chosenPort)
+            s.close()
+        except (OSError, serial.SerialException):
+            listPorts = available_ports()
+            
     # Setup window
     root = Tk()
     root.config(bg = 'white')
@@ -66,15 +74,27 @@ if __name__ == "__main__":
     ports = available_ports()
     if len(ports) == 0: ports.append("None")
     option.set(ports[0])
+    
+    # Port list
+    listPorts = available_ports()
+    optionMenu = OptionMenu(root, option, *listPorts, command=updatePorts)
+    optionMenu.grid(row=2, column=0)
 
+    # Display result
+    result = 5
+    text = Text(root, width=20, height=10, font=("Helvetica", 25))
+    text.insert('1.0', 'Result: ')
+    text.insert('2.0', result)
+    
     # Widgets
     image       = Label(root)
-    b_import    = Button(root, bg = 'white', text = 'Import image', command = import_image)
-    b_greyscale = Checkbutton(root, bg = 'white', variable = greyscale, text = 'Greyscale')
+    b_import    = Button(root, bg = 'white', text = 'Import image', command = import_image, font=("Helvetica", 19))
+    b_greyscale = Checkbutton(root, bg = 'white', variable = greyscale, text = 'Greyscale', font=("Helvetica", 19))
     b_greyscale.select()
     b_push = Button(root, bg='white', text='Push', command = push_image)
 
     # Positioning
+    optionMenu.grid(row=0, column=0)
     b_import.grid(row = 0, column = 1)
     b_push.grid(row=0, column = 2, sticky = W)
     b_greyscale.grid(row = 0, column = 3)
