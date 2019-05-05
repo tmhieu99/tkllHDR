@@ -3,6 +3,9 @@ from tkinter.filedialog import askopenfilename
 from PIL import Image, ImageTk
 import cv2
 import numpy as np
+import serial
+import glob
+import sys
 
 def Picture(image_name, greyscale = True):
     image = cv2.imread(image_name, not greyscale) 
@@ -11,7 +14,29 @@ def Picture(image_name, greyscale = True):
         image = cv2.merge((r, g, b))
     image = Image.fromarray(image)
     image = ImageTk.PhotoImage(image=image) 
+    print(list(image))
     return image
+
+def available_ports():
+    if sys.platform.startswith('win'):
+        ports = ['COM%s' % (i + 1) for i in range(256)]
+    elif sys.platform.startswith('linux') or sys.platform.startswith('cygwin'):
+        # this excludes your current terminal "/dev/tty"
+        ports = glob.glob('/dev/tty[A-Za-z]*')
+    elif sys.platform.startswith('darwin'):
+        ports = glob.glob('/dev/tty.*')
+    else:
+        raise EnvironmentError('Unsupported platform')
+
+    result = []
+    for port in ports:
+        try:
+            s = serial.Serial(port)
+            s.close()
+            result.append(port)
+        except (OSError, serial.SerialException):
+            pass
+    return result
 
 if __name__ == "__main__":
     def import_image():
