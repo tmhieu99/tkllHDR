@@ -15,7 +15,6 @@ def Picture(image_name, greyscale = True):
         image = cv2.merge((r, g, b))
     image = Image.fromarray(image)
     image = ImageTk.PhotoImage(image=image)
-    print(image)
     return image
 def available_ports():
     if sys.platform.startswith('win'):
@@ -54,10 +53,7 @@ if __name__ == "__main__":
         img = img.reshape(img.shape[0]*img.shape[1])
         ser = serial.Serial(
             port='',
-            baudrate=9600,
-            parity=serial.PARITY_ODD,
-            stopbits=serial.STOPBITS_TWO,
-            bytesize=serial.SEVENBITS
+            baudrate=115200
         )
         ser.write(img)
     # Setup window
