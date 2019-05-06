@@ -15,6 +15,25 @@ def open_image():
         res = image_processing(img)
         show_result(img, res)
 
+def crop_image(img):
+    for top in range(len(img)): 
+        if any(img[top]): break
+    for bot in range(len(img)-1, -1, -1): 
+        if any(img[bot]): break;
+    for left in range(len(img[0])): 
+        if any(img[:, left]): break;
+    for right in range(len(img[0])-1, -1, -1): 
+        if any(img[:, right]): break;
+
+    spacing = int(max(bot-top, right-left)*0.25)
+
+    top, left  = [(i - spacing if i > spacing else 0) for i in [top, left]]
+    bot, right = [(i + spacing if i + spacing < j else j) for i, j in [(bot, len(img)), (right, len(img[0]))]]
+
+    img = img[top:bot, left:right]
+
+    return img
+
 def image_processing(res):
     # Noise reduction
     res = cv2.fastNlMeansDenoising(res, res, 3, 7, 21)
@@ -25,38 +44,12 @@ def image_processing(res):
     # Inverse image
     res = cv2.bitwise_not(res, res)
     
+    # Remove white blobs
+    kernel = np.ones((2, 2), np.uint8)
+    res = cv2.morphologyEx(res, cv2.MORPH_OPEN, kernel)
+
     # Crop image
-    for i in range(len(res)):
-        if any(res[i]):
-            res = res[i:len(res)]
-            break
-    
-    for i in range(len(res)-1, -1,-1):
-        if any(res[i]):
-            res = res[0:i+1]
-            break
-    
-    for i in range(len(res[0])):
-        if any(res[:, i]):
-            res = res[:, i:len(res[0])]
-            break
-    
-    for i in range(len(res[0])-1, -1,-1):
-        if any(res[:, i]):
-            res = res[:, 0:i+1]
-            break
-    
-    size = max(res.shape[0], res.shape[1])
-    bg = np.zeros((size, size))
-    
-    if res.shape[0] > res.shape[1]:
-        s = ((res.shape[0] - res.shape[1])//2) 
-        bg[:, s:(s+res.shape[1])] = res
-        res = bg
-    else:
-        s = ((res.shape[1] - res.shape[0])//2) 
-        bg[s:(s+res.shape[0]), :] = res
-        res = bg
+    res = crop_image(res)
     
     # Scale image
     res = cv2.resize(res, (28, 28), interpolation = cv2.INTER_AREA)
