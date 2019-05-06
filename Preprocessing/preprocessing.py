@@ -16,25 +16,30 @@ def open_image():
         show_result(img, res)
 
 def crop_image(img):
-    for top in range(len(img)): 
-        if any(img[top]): break
-    for bot in range(len(img)-1, -1, -1): 
-        if any(img[bot]): break;
-    for left in range(len(img[0])): 
-        if any(img[:, left]): break;
-    for right in range(len(img[0])-1, -1, -1): 
-        if any(img[:, right]): break;
+    img, contours, hierarchy = cv2.findContours(img, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+    region = (0, 0, 0, 0)
+    max_area = 0
+    for cont in contours:
+        x, y, w, h = cv2.boundingRect(cont)
+        area = w*h
+        if area > max_area:
+            region = x,y,w,h
+            max_area = area
+    x, y, w, h = region
+    
+    roi = img[y:y+h,x:x+w]
 
-    spacing = int(max(bot-top, right-left)*0.25)
-
-    top, left  = [(i - spacing if i > spacing else 0) for i in [top, left]]
-    bot, right = [(i + spacing if i + spacing < j else j) for i, j in [(bot, len(img)), (right, len(img[0]))]]
-
-    img = img[top:bot, left:right]
-
-    return img
+    size = int(max(w, h)*1.4)
+    x2 = (size - w)//2
+    y2 = (size - h)//2
+    res = np.zeros((size, size))
+    res[y2:y2+h, x2:x2+w] = roi
+    return res
 
 def image_processing(res):
+    # Blur image
+    res = cv2.GaussianBlur(res,(9, 9), 1) 
+
     # Noise reduction
     res = cv2.fastNlMeansDenoising(res, res, 3, 7, 21)
     
@@ -43,7 +48,7 @@ def image_processing(res):
     
     # Inverse image
     res = cv2.bitwise_not(res, res)
-    
+
     # Remove white blobs
     kernel = np.ones((2, 2), np.uint8)
     res = cv2.morphologyEx(res, cv2.MORPH_OPEN, kernel)
@@ -51,6 +56,10 @@ def image_processing(res):
     # Crop image
     res = crop_image(res)
     
+    # Dilate image
+    kernel = np.ones((5, 5), np.uint8)
+    res = cv2.dilate(res,kernel,iterations = 1)
+
     # Scale image
     res = cv2.resize(res, (28, 28), interpolation = cv2.INTER_AREA)
     
