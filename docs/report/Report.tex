@@ -1,0 +1,366 @@
+\documentclass[12pt, a4paper, oneside]{article}
+
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+\renewcommand{\baselinestretch}{1.1}
+
+\usepackage[T1]{fontenc}
+\usepackage{libertine}
+\usepackage[english]{babel}
+\usepackage[protrusion=true,expansion=true]{microtype}	
+\usepackage{amsmath,amsfonts}                               % Math packages
+\usepackage[pdftex]{graphicx}	
+\usepackage{url}
+\usepackage{verbatim} 
+\usepackage{hyperref}
+\hypersetup{colorlinks = true, allcolors=black}
+\usepackage{cite}
+\usepackage[utf8]{inputenc}
+\usepackage[section]{placeins}
+\usepackage{mathtools}
+\usepackage{array}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[T1]{fontenc}
+\usepackage{bookmark}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{textcomp}
+\usepackage[sort,nameinlink]{cleveref}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{listings}
+\usepackage{subcaption}
+\usepackage{adjustbox}
+\usepackage{multirow}
+\usepackage{gensymb}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{lipsum}
+\usepackage{geometry}
+\usepackage{sectsty}                                        % Custom sectioning
+\usepackage{fancyhdr}                                       % Custom headers/footers
+
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=25mm,
+	right=20mm,
+	top=30mm,
+	bottom=30mm
+}
+
+%%% Custom headers/footers (fancyhdr package)
+\pagestyle{fancyplain}
+\fancyhead{}									    		% No page header
+\fancyfoot[L]{}									    		% Empty 
+\fancyfoot[C]{}									    		% Empty
+\fancyfoot[R]{\thepage}							    		% Pagenumbering
+\renewcommand{\headrulewidth}{0pt}                          % Remove header underlines
+\renewcommand{\footrulewidth}{0pt}                          % Remove footer underlines
+\setlength{\headheight}{13.6pt}
+\lstset{breaklines}
+\definecolor{MyDarkGreen}{rgb}{0.0,0.4,0.0}
+\lstloadlanguages{C}
+\lstset{ % Use Perl in this example
+	frame=single, % Single frame around code
+	basicstyle=\small\ttfamily, % Use small true type font underlined and blue
+	identifierstyle=, % Nothing special about identifiers                                         
+	showstringspaces=false, % Don't put marks in string spaces
+	tabsize=3, % 5 spaces per tab
+	%
+	% Put standard Perl functions not included in the default language here
+	morekeywords={rand},
+	%
+	% Put Perl function parameters here
+	morekeywords=[2]{on, off, interp},
+	%
+	% Put user defined functions here
+	%	morekeywords=[3]{test},
+	%
+	numbers=left, % Line numbers on left
+	firstnumber=1, % Line numbers start with line 1
+	stepnumber=5 % Line numbers go in steps of 5
+}
+
+%%% Maketitle metadata
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+
+\lstset{breaklines}
+
+\lstloadlanguages{C}
+
+\lstset{ % Use Perl in this example
+	frame=single, % Single frame around code
+	basicstyle=\small\ttfamily, % Use small true type font underlined and blue
+	identifierstyle=, % Nothing special about identifiers                                         
+	showstringspaces=false, % Don't put marks in string spaces
+	tabsize=3, % 5 spaces per tab
+	%
+	% Put standard Perl functions not included in the default language here
+	morekeywords={rand},
+	%
+	% Put Perl function parameters here
+	morekeywords=[2]{on, off, interp},
+	%
+	% Put user defined functions here
+	%	morekeywords=[3]{test},
+	%
+	numbers=left, % Line numbers on left
+	firstnumber=1, % Line numbers start with line 1
+	stepnumber=1 % Line numbers go in steps of 5
+}
+
+%%% Begin document
+\begin{document}
+    \thispagestyle{empty}
+    \begin{titlepage}
+        \begin{center}
+    	\normalfont \normalsize \textsc{Faculty of Computer Science and Engineering\\Ho Chi Minh City University of Technology}\\ [48pt]
+    	{\large -- Computer Architecture -- Semester 182 -- }
+        \horrule{0.5pt} \\[0.4cm]
+    	\huge VERILOG-BASED SINGLE-CYCLE \\
+    	\huge MIPS PROCESSOR
+    	\horrule{2pt} \\[0.5cm]
+    	
+        \includegraphics[width=6cm]{BK.png} \\
+        \vspace{1cm}
+    	
+        \scalebox{0.6}{%
+            \vspace{3cm}
+        	\begin{tabular}{|l|l|c|}                                                           \hline
+            \textbf{No.}    & \multicolumn{1}{c|}{\textbf{Name}}    & \textbf{Student's ID} \\ \hline
+            \textbf{1}      & Nguyen Minh Dang                      & 1752170               \\ \hline
+            \textbf{3}      & Le Nguyen An Khuong                   & 1752305               \\ \hline
+            \textbf{4}      & Nhan Ngoc Thien                       &  1752508               \\ \hline
+            \end{tabular}
+        }
+        
+        {\large Instructor: Dr. Pham Quoc Cuong}
+        \end{center}
+    \end{titlepage}
+    \newpage
+    \pagenumbering{roman}
+    \tableofcontents
+    \newpage
+    \listoffigures
+    \newpage
+    \pagenumbering{arabic}
+    \setcounter{page}{1}
+    
+    \suppressfloats %No figures on first page
+
+%--------------------------------------------------------CONTENT--------------------------------------------------------%
+
+    \section{Introduction}
+ \hspace{0.5cm} The report is about designing a MIPS Single Clock Cycle using Verilog HDL. The report involves using De2i board to simulate the result. The MIPS Single Clock Cycle processor is constructed by implementing 32-bit 32 registers, and 10 memory locations- each is 8 bit wide - (due to limitation of resources). The result is presented on De2i board by 3 methods: 26 leds, 7-segment leds and LCD.
+    \section{Design}
+    \subsection{Datapath} 
+    \begin{figure}[H]
+    	\includegraphics[width=17.5cm]{datapath.png}
+    	\caption{Single Cycle Full Datapath}
+    	\label{fig:1}
+    \end{figure}
+    \subsection{Block Description}
+    \subsubsection{Module SYS Master}
+    $\bullet$ Top-Level Entity module: connect all other modules: Instruction Memories, Register Files, ALU, Data Memory, Control Unit,...\\
+    \indent \indent- Display 26 bits low of output on leds, display 32 bits of output on 7-segment leds and display 32 bits output, PC, and 8 bits of SYS$\_$output$\_$sel on LCD.\\
+    \indent \indent- SYS$\_$clk works as clock triggered to execute instructions.\\
+    \indent \indent- SYS$\_$load is used to load 8 bits low of PC to demo the wanted instructions.\\
+    \indent \indent- SYS$\_$output$\_$sel is describe as following:\\
+    \indent \indent \indent \indent+ 0: Instructions Memory output is displayed.\\
+    \indent \indent \indent \indent+ 1: output-1 of Register Files is displayed.\\
+    \indent \indent \indent \indent+ 2: ALU result is displayed.\\
+    \indent \indent \indent \indent+ 3: ALU status is displayed.\\
+    \indent \indent \indent \indent+ 4: Data Memory result is displayed.\\
+    \indent \indent \indent \indent+ 5: Control Unit output is displayed.\\    
+    \indent \indent \indent \indent+ 6: ALU Control output is displayed.\\
+    \indent \indent \indent \indent+ 7: PC address is displayed.\\
+    \indent \indent \indent \indent+ 8: output-2 of Register Files is displayed.\\
+    \indent \indent \indent \indent+ 9: Exception Handle output is displayed.
+    
+    \subsubsection{Instruction Memory}
+    $\bullet$ Store the machine code of the program. \\
+    $\bullet$ Receive the address of the current instruction.\\
+    $\bullet$ Transfer the instruction to other block for execution.
+    
+    \subsubsection{Module Register Files}
+    $\bullet$ Receive the address of the instruction and decode the instruction of the register (there are 32 32-bit registers).  Output is the value of the register. \\
+    $\bullet$ If there is write signal, the input value will be written into the destination register. \\
+    $\bullet$ If the write register is $\$$0 then the error signal will be active and send signal to Exception Handle module.
+    
+    \subsubsection{Module ALU}
+    $\bullet$ Execute calculations(add, addi, sub, and, or, slt, branch, beq, jump,...). \\
+    $\bullet$ Output is the result of the calculation and status signal if there are any exception (divided by 0, overflow,...)\\
+    $\bullet$ ALU status is displayed as followed:\\
+    \begin{center}
+    	\begin{tabular}[H]{|l|l|l|l|}
+    	 \hline
+    	 Name & Bit & Description & Exception \\ \hline
+    	 Zero & 7 & Active when ALU result equals zero &  \\ \hline
+    	 Overflow & 6 & Active when ALU result overflows & x \\ \hline
+    	 Carry &  5 & Active when ALU result has carry bit & \\ \hline
+    	 Negative & 4 & Active when ALU result is negative & \\ \hline
+    	 Invalid Address & 3 & Active when ALU result is not aligned & x \\ \hline
+    	 Undefined & [2:0] & No description & \\ \hline
+    	 
+    	\end{tabular}
+	\end{center}
+
+    \subsubsection{Module Data Memory}
+    $\bullet$ Create memory space :10 memory locations, each is 8 bit due to the resources limitation.\\
+    $\bullet$ Access and write into the input location of the memory. 
+    
+    \subsubsection{Control Unit}
+    $\bullet$ Receive the Operation bit from Instruction Memory to transfer the signal for other blocks to execute the given instruction.\\
+    $\bullet$ The output of Control Unit is described as followed: \\
+    \begin{center}
+    \begin{tabular}{|l|l|}
+    	\hline
+    	Name & Bit \\ \hline
+    	Jump & 10 \\ \hline
+    	Branch & 9 \\ \hline
+    	MemRead & 8 \\  \hline
+    	MemWrite & 7 \\  \hline
+    	Mem2Reg & 6 \\  \hline
+    	ALUOp & [5:4] \\  \hline
+    	Exception & 3 \\  \hline
+    	ALUsrc & 2 \\  \hline
+    	RegWrite & 1 \\  \hline
+    	RegDst & 0 \\ \hline
+    \end{tabular}
+   \end{center} 
+    
+    \subsubsection{Module PC}
+    $\bullet$ Giving the address of the current instruction \\
+    $\bullet$ Receive the address of the next instruction to execute. \\
+    $\bullet$ If exception occurs, PC won't be directed to next instruction.
+    
+     \subsubsection{Module ALU Control}
+    $\bullet$ Receive function from Instruction Memory and ALU OpCode from the Control Unit.\\
+    $\bullet$ Giving ALU block the compatible signal to perform the equivalent arithmetic operation. 
+    
+    \subsubsection{Module Exception Handle}
+    \begin{tabular}{ll}
+    	$\bullet$ Receive 8 bit of ALU status, 4 bit: Exception, MemRead, MemWrite, MemRead, Mem2Reg & \\ from Control Unit, and 1 bit from Register Files.  & \\
+    	$\bullet$ Exceptions need to be handled:& \\ 
+    	\quad \quad- Instruction syntax error. &\\
+    	\quad \quad- Hardware error (write on register \$zero, unaligned). &\\
+    	\quad \quad- Arithmetic exception (overflow). &\\
+    	$\bullet$ The system will enable  block the Read and Write signal to prevent output error.&
+    \end{tabular}
+
+	\subsubsection{Module Mux}
+	$\bullet$ Selection module with two inputs.
+	\subsubsection{Module Sign Extend}
+	$\bullet$ Input is an 16-bit integer, 5 bits shamt, output is an 32-bit extended integer number.
+    
+	\subsubsection{LCD}
+	\begin{figure}[H]
+		\includegraphics[width=16cm]{Moore_FSM.png}
+		\caption{LCD Finite State Machine}
+		\label{fig:LCD}
+	\end{figure}
+	$\bullet$ Manipulate the LCD to display necessary information of the system. \\
+	$\bullet$ The LCD works by receiving and processing instructions from user. This module automates the process of sending the instructions into the LCD. \\
+	$\bullet$ The figure above demonstrate the LCD's Finite State Machine \\
+	\indent	$\bullet$ \textbf{INIT:} In this state the module initialized setup instructions to push into the LCD. \\
+	\indent	$\bullet$ \textbf{PUSH:} In this state the module push instruction into the LCD (one instruction per time) \\ 
+	\indent	$\bullet$ \textbf{LOAD:} In this state the module load the next instruction to be pushed. \\
+	\indent	$\bullet$ \textbf{IDLE:} After pushing all the instructions, the module goes to IDLE state, which it will do nothing and wait for next set of instructions. \\
+	
+	Finally, all state can transit to INIT state with an Asynchronous reset signal.
+	
+	
+\section{Implementation}
+     \subsection{Prototype}
+   \subsubsection{Module SYS-Master}
+     \begin{lstlisting}
+module SYS_Master(
+  output [26:0] SYS_leds,
+  output [0:6] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7,
+  output [7:0]	LCD_DATA,
+  output		LCD_RW,LCD_EN,LCD_RS,
+  input SYS_clk,
+  input SYS_reset,
+  input SYS_load,
+  input [7:0] SYS_pc_load,
+  input [7:0] SYS_output_sel,
+  input CLOCK_50, SW
+);
+     \end{lstlisting}
+     
+     \subsubsection{Module Instructions Memory}
+     \begin{lstlisting}
+module inst_mem(
+  output [31:0] imem_instruction,
+  input  reset,
+  input  [31:0] imem_pc
+);
+     \end{lstlisting}
+     
+      \subsubsection{Module Register Files}
+     \begin{lstlisting}
+module register_files(
+  output [31:0] read_data_1,
+  output [31:0] read_data_2,
+  output error_toggle,
+  input [4:0]   read_register_1, 
+  input [4:0]   read_register_2, 
+  input [4:0]   write_register, 
+  input         write_switch,
+  input [31:0] write_data,
+  input clk, reset, enable
+);
+     \end{lstlisting}
+     
+      \subsubsection{Module ALU}
+     \begin{lstlisting}
+module alu(
+  output [31:0] alu_result,
+  output [7:0] alu_status,
+  input signed [31:0] alu_operand_1, alu_operand_2,
+  input  [3:0] alu_control
+);
+     \end{lstlisting}
+     
+     \subsubsection{Module Data Memory}
+     \begin{lstlisting}
+module data_memory(
+  output [31:0] data_out,
+  input[31:0] address,
+  input[31:0] data_in,
+  input mem_read, mem_write, clk, reset
+);
+     \end{lstlisting}
+     
+     \subsubsection{Module Control Unit}
+     \begin{lstlisting}
+module control_unit(
+  output [10:0] control_signal,
+  input [5:0] opcode
+);
+     \end{lstlisting}
+
+     \subsubsection{LCD}
+     \begin{lstlisting}
+module lcd(
+	input CLOCK,
+	input RST,
+	input CLK,
+	input LOAD,
+	input SW,
+	input [31:0] DATA,
+	input [31:0] PC,
+	input [7:0]  SEL,
+	output reg LCD_EN,
+	output reg LCD_RS,
+	output LCD_RW,
+	output reg [7:0] LCD_DATA
+);
+     \end{lstlisting}
+    \section{Result and Simulation}
+    \section{Conclusions}
+    \hspace{0.5cm}The project provide the opportunity to comprehend the function of a normal MIPS instruction, study deep into how the computer when each line of code is compiled; a long with that is the chance of practicing with Verilog. This project gives us the base knowledge for future programming as well as much greater project.
+\end{document}
