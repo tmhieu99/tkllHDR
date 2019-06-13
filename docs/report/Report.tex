@@ -98,11 +98,11 @@
 \title{
 	\pagestyle{empty}
 	\usefont{OT1}{bch}{b}{n}
-	\normalfont \normalsize \textsc{Faculty of Computer Science and Engineering\\Ho Chi Minh City University of Technology}\\ [48pt]
-	\includegraphics[scale=0.1]{bku}\\
+	\normalfont \large \textsc{Ho Chi Minh City University of Technology\\Faculty of Computer Science and Computer Engineering}\\ [48pt]
+	\includegraphics[scale=0.2]{bku}\\
 	\vspace{25px}
 	\horrule{0.5pt} \\[0.4cm]
-	\huge -- Handwritten Text Recognition System --
+	\huge -- Handwritten Digits Recognition System --
 	Research Report
 	\horrule{2pt} \\[0.5cm]
 }
@@ -136,8 +136,47 @@
     \suppressfloats %No figures on first page
 %--------------------------------------------- MAIN CONTENT ---------------------------------------------%
     \section{Introduction}
+    	\subsection{Project}
+    	
+    	\subsection{Zedboard}
+    		ZedBoard™ is a complete development kit for designers using Xilinx Zynq®-7000 All Programmable SoC. The board provides various interfaces such as USB-JTAG Programming, USB OTG 2.0, USB-UART bridge, SD card and so on.  Combining a dual Corex-A9 Processing System (PS) with Programmable Logic (PL) cells, the Zedboard can be targeted  to use in many applications.
+    		
+	    	\begin{figure}[tbh!]
+	    		\begin{center}
+	    			\includegraphics[scale=2.5]{zedboard.png}
+	    			\caption{Zedboard}
+	    			\label{fig:Zedboad}
+	    		\end{center}
+	    	\end{figure}
+    	
+    	\subsection{MNIST Database}
+    		The dataset consists of 60000 digits for the training set and 10000 examples for the test set. Each digit have been size-normalized and centered in a fixed-size 28x28 pixel image. 
+    			\begin{figure}[tbh!]
+    				\begin{center}
+    					\includegraphics[scale=0.25]{MNIST.png}
+    					\caption{MNIST Database}
+    					\label{fig:MNIST Database}
+    				\end{center}
+    			\end{figure}
+    		
+    	\subsection{Algorithm}
+    		
+    		
     \section{Methods}
+    
     \section{Results}
+    
     \section{Discussion}
-    \section{References}
+    
+    
+	\begin{thebibliography}{9}
+    	\bibitem{zedboardwebsite} 
+    	Zedboard
+   		\\\texttt{http://zedboard.org//}
+    		
+	   	\bibitem{mistwebsite} 
+	   	THE MNIST DATABASE of handwritten digits
+	   	\\\texttt{http://yann.lecun.com/exdb/mnist/}
+   \end{thebibliography}
+	    
 \end{document}

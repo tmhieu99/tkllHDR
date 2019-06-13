@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.8.4)  13 JUN 2019 16:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.8.4)  13 JUN 2019 16:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1203,17 +1203,17 @@ File: ot1bch.fd 2004/10/18 font definitions for OT1/bch.
 File: mt-bch.cfg 2007/03/03 v1.5 microtype config. file: Bitstream Charter (RS)
 
 )
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 14.4pt on input line 123.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 123.
+(Font)              scaled to size 14.4pt on input line 123.
 <bku.png, id=7, 1007.765pt x 1027.84pt>
 File: bku.png Graphic file (type png)
 <use bku.png>
 Package pdftex.def Info: bku.png  used on input line 123.
-(pdftex.def)             Requested size: 100.7824pt x 102.79001pt.
+(pdftex.def)             Requested size: 201.54942pt x 205.56436pt.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 24.88pt on input line 123.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 123.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
@@ -1257,37 +1257,80 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 \tf@lof=\write5
 \openout5 = `Report.lof'.
 
- [2]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) 
-has been already used, duplicate ignored
+ [2]
+LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on
+ input line 142.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.
+fd
+File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/
+LinuxLibertineT-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 142.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+<zedboard.png, id=48, 144.54pt x 128.8815pt>
+File: zedboard.png Graphic file (type png)
+<use zedboard.png>
+Package pdftex.def Info: zedboard.png  used on input line 146.
+(pdftex.def)             Requested size: 361.34906pt x 322.20294pt.
+<MNIST.png, id=49, 1636.1125pt x 993.7125pt>
+File: MNIST.png Graphic file (type png)
+<use MNIST.png>
+Package pdftex.def Info: MNIST.png  used on input line 156.
+(pdftex.def)             Requested size: 409.02713pt x 248.4275pt.
+LaTeX Font Info:    Try loading font information for T1+LinuxLibertineMonoT-TLF
+ on input line 175.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/libertine/T1LinuxLibertineMonoT-T
+LF.fd
+File: T1LinuxLibertineMonoT-TLF.fd 2017/03/20 (autoinst) Font definitions for T
+1/LinuxLibertineMonoT-TLF.
+)
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 175.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `LinuxLibertineMonoT-TLF' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.143 \end{document}
-                     [1]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 143.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 143.
- (./Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 143.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 143.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
+l.177 	   	\bibitem{mistwebsite}
+                                 [1 <./zedboard.png>] [2 <./MNIST.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 182.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 182.
+
+(./Report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 182.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 182.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 182.
  ) 
 Here is how much of TeX's memory you used:
- 27076 strings out of 492649
- 495880 string characters out of 6129623
- 683444 words of memory out of 5000000
- 30442 multiletter control sequences out of 15000+600000
- 55046 words of font info for 56 fonts, out of 8000000 for 9000
+ 27223 strings out of 492649
+ 499219 string characters out of 6129623
+ 685455 words of memory out of 5000000
+ 30550 multiletter control sequences out of 15000+600000
+ 61492 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,13n,92p,440b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc
-}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_ncsllp.enc}<
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLibertineT.p
-fb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLibertin
-eTB.pfb>
-Output written on Report.pdf (4 pages, 236933 bytes).
+ 62i,13n,92p,488b,510s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_d6jdyt.enc
+}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{
+/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{/
+usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_ncsllp.enc}</u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLibertineMT.pf
+b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLibertine
+T.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLiber
+tineTB.pfb>
+Output written on Report.pdf (5 pages, 1345634 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
- 17466 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 113 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
+ 20 named destinations out of 1000 (max. 500000)
+ 20060 words of extra memory for PDF output out of 20736 (max. 10000000)
 
