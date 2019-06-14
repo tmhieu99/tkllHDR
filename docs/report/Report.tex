@@ -35,6 +35,7 @@
 \usepackage{geometry}
 \usepackage{sectsty}
 \usepackage{fancyhdr}
+\usepackage{hyperref}
 
 \geometry{
 	a4paper,
@@ -137,9 +138,10 @@
 %--------------------------------------------- MAIN CONTENT ---------------------------------------------%
     \section{Introduction}
     	\subsection{Project}
+    		The target is to implement a Handwritten Digits Recognition system using Machine learning based on the Zedboard FPGA development kit. The tool used to program the Zedboard is the Xilinx Vivado High-Level Synthesis (HLS). The project is built based on two programing languages: Python and C.
     	
     	\subsection{Zedboard}
-    		ZedBoard™ is a complete development kit for designers using Xilinx Zynq®-7000 All Programmable SoC. The board provides various interfaces such as USB-JTAG Programming, USB OTG 2.0, USB-UART bridge, SD card and so on.  Combining a dual Corex-A9 Processing System (PS) with Programmable Logic (PL) cells, the Zedboard can be targeted  to use in many applications.
+    		ZedBoard™ is a complete development kit for designers using Xilinx Zynq®-7000 All Programmable SoC. The board provides various interfaces such as USB-JTAG Programming, USB OTG 2.0, USB-UART bridge, SD card and so on.  Combining a dual Corex-A9 Processing System (PS) with Programmable Logic (PL) cells, the Zedboard can be targeted  to use in many applications. 
     		
 	    	\begin{figure}[tbh!]
 	    		\begin{center}
@@ -160,12 +162,35 @@
     			\end{figure}
     		
     	\subsection{Algorithm}
-    		
+    		In this project, the implementation of the system is based on Perceptron Learning Algorithm (PLA) - an algorithm for supervised learning of binary classifiers. A binary classifier is a function which can decide whether or not an input, represented by a vector of numbers, belongs to some specific class. 
     		
     \section{Methods}
+    	\subsection{Pre-processing}
+    		
     
+    	\subsection{Implement on Zedboard}
+    		In this project, the Perceptron algorithm is programed on the Zedboard via Quad SPI Flash, which is a non-volatile memory Zedboard's Zynq chip looks at on every startup. If Quad SPI is flashed then the Zynq will program itself with the contents found in Quad SPI's Flash memory. A picture below indicates the set up of the Zedboard.
+    		\begin{figure}[tbh!]
+    			\begin{center}
+    				\includegraphics[scale=0.6]{QSPI.png}
+    				\caption{Quad SPI Flash}
+    				\label{fig:Quad SPI Flash}
+    			\end{center}
+    		\end{figure}
+    		
+    		In a high productivity design flow, the primary means of generating the core design IP is
+    		through the use of C-based IP and High-Level Synthesis (HLS) of C code into RTL. The design flow for Vivado HLS is shown in the figure below. 
+    		\begin{figure}[H]
+    			\begin{center}
+    				\includegraphics[scale=0.5]{HLS.png}
+    				\caption{Vivado HLS deisgn flow}
+    				\label{fig:Vivado HLS deisgn flow}
+    			\end{center}
+    		\end{figure}
+    		
     \section{Results}
-    
+    	The source code of the project: \url{https://github.com/dangne/tkllHTR/}
+    	
     \section{Discussion}
     
     
@@ -177,6 +202,10 @@
 	   	\bibitem{mistwebsite} 
 	   	THE MNIST DATABASE of handwritten digits
 	   	\\\texttt{http://yann.lecun.com/exdb/mnist/}
+	   	
+	   	\bibitem{perceptron} 
+	   	Zedboard
+	   	\\\texttt{https://machinelearningcoban.com/2017/01/21/perceptron/}
    \end{thebibliography}
 	    
 \end{document}
