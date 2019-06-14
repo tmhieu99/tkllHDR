@@ -6,6 +6,6 @@
 \contentsline {subsection}{\numberline {1.4}Algorithm}{2}{subsection.1.4}
 \contentsline {section}{\numberline {2}Methods}{2}{section.2}
 \contentsline {subsection}{\numberline {2.1}Pre-processing}{2}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Implement on Zedboard}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.2}Implement on Zedboard}{3}{subsection.2.2}
 \contentsline {section}{\numberline {3}Results}{4}{section.3}
-\contentsline {section}{\numberline {4}Discussion}{4}{section.4}
+\contentsline {section}{\numberline {4}Discussion}{5}{section.4}

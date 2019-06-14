@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.8.4)  14 JUN 2019 15:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.8.4)  14 JUN 2019 16:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1056,7 +1056,14 @@ Package geometry Warning: Over-specification in `v'-direction.
     `height' (731.23582pt) is ignored.
 
 Package hyperref Info: Option `colorlinks' set `true' on input line 49.
-(./Report.aux)
+(./Report.aux
+
+LaTeX Warning: Label `fig:Quad SPI Flash' multiply defined.
+
+
+LaTeX Warning: Label `fig:Quad SPI Flash@cref' multiply defined.
+
+)
 \openout1 = `Report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
@@ -1272,12 +1279,12 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<zedboard.png, id=56, 144.54pt x 128.8815pt>
+<zedboard.png, id=58, 144.54pt x 128.8815pt>
 File: zedboard.png Graphic file (type png)
 <use zedboard.png>
 Package pdftex.def Info: zedboard.png  used on input line 148.
 (pdftex.def)             Requested size: 361.34906pt x 322.20294pt.
-<MNIST.png, id=57, 1636.1125pt x 993.7125pt>
+<MNIST.png, id=59, 1636.1125pt x 993.7125pt>
 File: MNIST.png Graphic file (type png)
 <use MNIST.png>
 Package pdftex.def Info: MNIST.png  used on input line 158.
@@ -1288,19 +1295,25 @@ been already used, duplicate ignored
                    \relax 
 l.163     		
              [1 <./zedboard.png>]
-<QSPI.png, id=63, 361.35pt x 288.07625pt>
+<preProcess.png, id=65, 244.915pt x 1176.395pt>
+File: preProcess.png Graphic file (type png)
+<use preProcess.png>
+Package pdftex.def Info: preProcess.png  used on input line 172.
+(pdftex.def)             Requested size: 97.96425pt x 470.54967pt.
+ [2 <./MNIST.png>]
+<QSPI.png, id=71, 361.35pt x 288.07625pt>
 File: QSPI.png Graphic file (type png)
 <use QSPI.png>
-Package pdftex.def Info: QSPI.png  used on input line 175.
+Package pdftex.def Info: QSPI.png  used on input line 183.
 (pdftex.def)             Requested size: 216.81168pt x 172.84708pt.
-<HLS.png, id=64, 699.61375pt x 573.14125pt>
+<HLS.png, id=72, 699.61375pt x 573.14125pt>
 File: HLS.png Graphic file (type png)
 <use HLS.png>
-Package pdftex.def Info: HLS.png  used on input line 185.
+Package pdftex.def Info: HLS.png  used on input line 193.
 (pdftex.def)             Requested size: 349.80602pt x 286.56992pt.
- [2 <./MNIST.png>]
+ [3 <./preProcess.png>]
 LaTeX Font Info:    Try loading font information for T1+LinuxLibertineMonoT-TLF
- on input line 192.
+ on input line 200.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/libertine/T1LinuxLibertineMonoT-T
 LF.fd
@@ -1308,27 +1321,31 @@ File: T1LinuxLibertineMonoT-TLF.fd 2017/03/20 (autoinst) Font definitions for T
 1/LinuxLibertineMonoT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 192.
+(Font)              scaled to size 12.0pt on input line 200.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineMonoT-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [3 <./QSPI.png> <./HLS.png>] [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 211.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 211.
+ [4 <./QSPI.png> <./HLS.png>] [5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 219.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 219.
  (./Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 211.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 211.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 211.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 219.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 219.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 219.
  ) 
 Here is how much of TeX's memory you used:
- 27260 strings out of 492649
- 499852 string characters out of 6129623
- 685455 words of memory out of 5000000
- 30566 multiletter control sequences out of 15000+600000
+ 27269 strings out of 492649
+ 500008 string characters out of 6129623
+ 684455 words of memory out of 5000000
+ 30572 multiletter control sequences out of 15000+600000
  62584 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,13n,92p,488b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,13n,92p,488b,514s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_d6jdyt.enc
 }{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{
@@ -1338,10 +1355,10 @@ sr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLibertineMT.pf
 b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLibertine
 T.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLiber
 tineTB.pfb>
-Output written on Report.pdf (7 pages, 2245317 bytes).
+Output written on Report.pdf (8 pages, 2277351 bytes).
 PDF statistics:
- 145 PDF objects out of 1000 (max. 8388607)
- 121 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 20086 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 153 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 20091 words of extra memory for PDF output out of 20736 (max. 10000000)
 

@@ -166,10 +166,18 @@
     		
     \section{Methods}
     	\subsection{Pre-processing}
-    		
+    		Before input to the system, an image goes through the 8-stage pre-processing procedure. 
+    		\begin{figure}[H]
+    			\begin{center}
+    				\includegraphics[scale=0.4]{preProcess.png}
+    				\caption{Pre-processing}
+    				\label{fig:Pre-processing}
+    			\end{center}
+    		\end{figure}
     
     	\subsection{Implement on Zedboard}
     		In this project, the Perceptron algorithm is programed on the Zedboard via Quad SPI Flash, which is a non-volatile memory Zedboard's Zynq chip looks at on every startup. If Quad SPI is flashed then the Zynq will program itself with the contents found in Quad SPI's Flash memory. A picture below indicates the set up of the Zedboard.
+    		
     		\begin{figure}[tbh!]
     			\begin{center}
     				\includegraphics[scale=0.6]{QSPI.png}
