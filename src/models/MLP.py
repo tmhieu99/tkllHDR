@@ -3,6 +3,7 @@ import keras
 from keras.datasets import mnist
 from keras.layers import Dense, Flatten
 from keras.models import Sequential
+from keras.utils.vis_utils import plot_model
 
 # Load MNIST data
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
@@ -16,13 +17,16 @@ x_test = x_test / 255
 y_train = keras.utils.to_categorical(y_train, num_classes)
 y_test = keras.utils.to_categorical(y_test, num_classes)
 
+# Flatten
+x_train = x_train.reshape(x_train.shape[0], 28*28).astype('float32')
+x_test = x_test.reshape(x_test.shape[0], 28*28).astype('float32')
+
+print("hello")
 # Define MLP model
-def MLP(num_layers, num_units):
+def MLP(num_layers = 1, num_units = 1):
     # Create layers
     model = Sequential()
-    model.add(Flatten(input_shape = (28, 28)))
-    for i in range(num_layers):
-        model.add(Dense(num_units[i], activation='relu'))
+    model.add(Dense(num_units, activation='relu', input_shape=(784,)))
     model.add(Dense(num_classes, activation='softmax'))
     # Compile model
     '''
@@ -40,6 +44,9 @@ def MLP(num_layers, num_units):
     print('Test loss: %.4f'% score[0])
     print('Test accuracy %.4f'% score[1])
     
+    # Visualize the model
+    plot_model(model, to_file="model.png", show_shapes=True, show_layer_names=True) 
+
     return model
 
 print(
