@@ -6,7 +6,7 @@ from tkinter import *
 from tkinter.filedialog import askopenfilename
 
 def open_image():
-    filename = askopenfilename( initialdir = "./",
+    filename = askopenfilename( initialdir = "../../data/raw",
                                 initialfile = "",
                                 filetypes = (("JPG", "*.jpg"), ("All Files", "*.*")),
                                 title = "Choose an image")
@@ -69,7 +69,7 @@ def image_processing(res):
 def show_result(ori, res):
     # Record result
     t = datetime.datetime.now()
-    filename = "./res/result"
+    filename = "../../data/result"
     for i in [t.day, t.month, t.year, t.hour, t.minute, t.second, 'jpg']:
         filename += '.' + str(i)
     cv2.imwrite(filename, res)

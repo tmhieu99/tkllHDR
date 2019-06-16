@@ -1,7 +1,6 @@
 *.swp
 *.swo
 *.o
-*.jpg
 *.zip
 train-images-idx3-ubyte
 train-labels-idx1-ubyte

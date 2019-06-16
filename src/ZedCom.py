@@ -45,7 +45,7 @@ def available_ports():
     return result
 
 def import_image():
-    filename = askopenfilename( initialdir = "./",
+    filename = askopenfilename( initialdir = "../data/",
                                 initialfile = "",
                                 filetypes = (("All Files", "*"),
                                             ("Text File", "*.txt")),
