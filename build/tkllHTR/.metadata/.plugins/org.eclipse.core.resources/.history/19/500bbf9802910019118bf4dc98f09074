@@ -1,0 +1,57 @@
+#include <stdlib.h>
+
+#include "xil_printf.h"
+#include "xuartps.h"
+#include "xparameters.h"
+#include "sleep.h"
+
+#define BUFFER_SIZE 	5
+
+XUartPs Uart; // Instance of the UART Device
+
+int* SendBuffer = (int*) malloc(BUFFER_SIZE*sizeof(int));	// Buffer for Transmitting Data
+int* RecvBuffer = (int*) malloc(BUFFER_SIZE*sizeof(int));	// Buffer for Receiving Data
+
+void flush(u8 Buffer[], u32 NumBytes){
+	for (int Index = 0 ; Index < NumBytes ; Index++)
+		Buffer[Index] = 0;
+}
+
+int main(){
+	int Index;
+	int RecvBytes;
+
+	// Lookup configuration for the UART
+	XUartPs_Config* Config = XUartPs_LookupConfig(XPAR_XUARTPS_0_DEVICE_ID);
+
+	// Initialize UART with the above configuration
+	XUartPs_CfgInitialize(&Uart, Config, Config->BaseAddress);
+
+	// Set receive timeout to detect an idle connection
+	XUartPs_SetRecvTimeout(&Uart, 8);
+
+	// Initialize send and receive buffer
+	flush(SendBuffer, BUFFER_SIZE);
+	flush(RecvBuffer, BUFFER_SIZE);
+
+
+	// Send data to UART
+	XUartPs_Send(&Uart, SendBuffer, BUFFER_SIZE);
+
+	while(1){
+		// Wait until there is incoming data
+		while (!XUartPs_IsReceiveData(XPAR_XUARTPS_0_BASEADDR));
+
+		// Short delay to ensure the UART receive properly
+		usleep(500);
+
+		// Receive data from UART
+		RecvBytes = XUartPs_Recv(&Uart, RecvBuffer, BUFFER_SIZE);
+
+		// Send received data again to check if it is read correctly
+		XUartPs_Send(&Uart, RecvBuffer, BUFFER_SIZE);
+		xil_printf("\n\rNumber of bytes received: %d\n\r", RecvBytes);
+		flush(RecvBuffer, BUFFER_SIZE);
+	}
+	return 0;
+}

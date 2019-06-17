@@ -1,0 +1,2549 @@
+01:49:30 **** Build of project tkllHTR_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+01:50:14 **** Clean-only build of configuration Debug for project tkllHTR ****
+make clean 
+rm -rf  ./src/main.o  ./src/main.d  tkllHTR.elf.size  tkllHTR.elf
+' '
+01:50:14 **** Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:32:5: error: expected identifier or '(' before 'return'
+     return 0;
+     ^~~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+01:51:57 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19016	   1144	  22568	  42728	   a6e8	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+01:52:08 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19016	   1144	  22584	  42744	   a6f8	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+01:52:27 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19016	   1144	  22584	  42744	   a6f8	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+01:52:29 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19016	   1144	  22584	  42744	   a6f8	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+01:53:10 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:6:24: error: expected ']' before ';' token
+ #define BUFFER_SIZE  16;
+                        ^
+../src/main.c:10:22: note: in expansion of macro 'BUFFER_SIZE'
+ static u8 SendBuffer[BUFFER_SIZE];
+                      ^~~~~~~~~~~
+../src/main.c:6:24: error: expected ']' before ';' token
+ #define BUFFER_SIZE  16;
+                        ^
+../src/main.c:11:22: note: in expansion of macro 'BUFFER_SIZE'
+ static u8 RecvBuffer[BUFFER_SIZE];
+                      ^~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+01:53:13 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:11:11: warning: 'RecvBuffer' defined but not used [-Wunused-variable]
+ static u8 RecvBuffer[BUFFER_SIZE];
+           ^~~~~~~~~~
+../src/main.c:10:11: warning: 'SendBuffer' defined but not used [-Wunused-variable]
+ static u8 SendBuffer[BUFFER_SIZE];
+           ^~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19016	   1144	  22616	  42776	   a718	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+01:53:28 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:11:11: warning: 'RecvBuffer' defined but not used [-Wunused-variable]
+ static u8 RecvBuffer[BUFFER_SIZE];
+           ^~~~~~~~~~
+../src/main.c:10:11: warning: 'SendBuffer' defined but not used [-Wunused-variable]
+ static u8 SendBuffer[BUFFER_SIZE];
+           ^~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19016	   1144	  22776	  42936	   a7b8	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+01:54:51 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:11: warning: 'RecvBuffer' defined but not used [-Wunused-variable]
+ static u8 RecvBuffer[BUFFER_SIZE]; // Buffer for Receiving Data
+           ^~~~~~~~~~
+../src/main.c:11:11: warning: 'SendBuffer' defined but not used [-Wunused-variable]
+ static u8 SendBuffer[BUFFER_SIZE]; // Buffer for Transmitting Data
+           ^~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19016	   1144	  22776	  42936	   a7b8	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+01:54:53 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:11:11: warning: 'RecvBuffer' defined but not used [-Wunused-variable]
+ static u8 RecvBuffer[BUFFER_SIZE]; // Buffer for Receiving Data
+           ^~~~~~~~~~
+../src/main.c:10:11: warning: 'SendBuffer' defined but not used [-Wunused-variable]
+ static u8 SendBuffer[BUFFER_SIZE]; // Buffer for Transmitting Data
+           ^~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19016	   1144	  22776	  42936	   a7b8	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+01:56:35 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:14:18: warning: unused variable 'Config' [-Wunused-variable]
+  XUartPs_Config* Config = XUartPs_LookupConfig(XPAR_XUARTPS_0_DEVICE_ID);
+                  ^~~~~~
+At top level:
+../src/main.c:11:11: warning: 'RecvBuffer' defined but not used [-Wunused-variable]
+ static u8 RecvBuffer[BUFFER_SIZE]; // Buffer for Receiving Data
+           ^~~~~~~~~~
+../src/main.c:10:11: warning: 'SendBuffer' defined but not used [-Wunused-variable]
+ static u8 SendBuffer[BUFFER_SIZE]; // Buffer for Transmitting Data
+           ^~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19056	   1160	  22776	  42992	   a7f0	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+01:58:26 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:11:11: warning: 'RecvBuffer' defined but not used [-Wunused-variable]
+ static u8 RecvBuffer[BUFFER_SIZE]; // Buffer for Receiving Data
+           ^~~~~~~~~~
+../src/main.c:10:11: warning: 'SendBuffer' defined but not used [-Wunused-variable]
+ static u8 SendBuffer[BUFFER_SIZE]; // Buffer for Transmitting Data
+           ^~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  21224	   1160	  22856	  45240	   b0b8	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:00:20 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:11:11: warning: 'RecvBuffer' defined but not used [-Wunused-variable]
+ static u8 RecvBuffer[BUFFER_SIZE]; // Buffer for Receiving Data
+           ^~~~~~~~~~
+../src/main.c:10:11: warning: 'SendBuffer' defined but not used [-Wunused-variable]
+ static u8 SendBuffer[BUFFER_SIZE]; // Buffer for Transmitting Data
+           ^~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23736	   1160	  22856	  47752	   ba88	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:01:44 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23836	   1160	  22856	  47852	   baec	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:02:45 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23860	   1160	  22856	  47876	   bb04	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:03:27 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23884	   1160	  22856	  47900	   bb1c	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:03:34 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23920	   1160	  22856	  47936	   bb40	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:03:37 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23920	   1160	  22856	  47936	   bb40	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:03:42 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23920	   1160	  22856	  47936	   bb40	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:04:13 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+02:08:48 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../tkllHTR_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:3:
+../src/main.c: In function 'main':
+../src/main.c:26:32: error: 'UartBaseAddress' undeclared (first use in this function)
+  while (!XUartPs_IsReceiveData(UartBaseAddress));
+                                ^
+../../tkllHTR_bsp/ps7_cortexa9_0/include/xuartps_hw.h:412:15: note: in definition of macro 'XUartPs_IsReceiveData'
+  !((Xil_In32((BaseAddress) + XUARTPS_SR_OFFSET) &  \
+               ^~~~~~~~~~~
+../src/main.c:26:32: note: each undeclared identifier is reported only once for each function it appears in
+  while (!XUartPs_IsReceiveData(UartBaseAddress));
+                                ^
+../../tkllHTR_bsp/ps7_cortexa9_0/include/xuartps_hw.h:412:15: note: in definition of macro 'XUartPs_IsReceiveData'
+  !((Xil_In32((BaseAddress) + XUARTPS_SR_OFFSET) &  \
+               ^~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+02:10:29 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23992	   1160	  22856	  48008	   bb88	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:12:15 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24016	   1160	  22856	  48032	   bba0	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:12:18 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24016	   1160	  22856	  48032	   bba0	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:12:21 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+02:12:45 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24016	   1160	  22664	  47840	   bae0	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:12:48 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24016	   1160	  22664	  47840	   bae0	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:12:51 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+02:13:40 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24004	   1160	  22664	  47828	   bad4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:14:08 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24016	   1160	  22664	  47840	   bae0	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:14:11 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+02:16:15 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+02:16:53 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:15:6: warning: variable 'RecvBytes' set but not used [-Wunused-but-set-variable]
+  int RecvBytes;
+      ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24024	   1160	  22664	  47848	   bae8	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:17:13 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:31:3: error: 'xil_print' undeclared (first use in this function); did you mean 'xil_printf'?
+   xil_print
+   ^~~~~~~~~
+   xil_printf
+../src/main.c:31:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:33:2: error: expected ';' before 'return'
+  return 0;
+  ^~~~~~
+../src/main.c:15:6: warning: variable 'RecvBytes' set but not used [-Wunused-but-set-variable]
+  int RecvBytes;
+      ^~~~~~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+02:17:28 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26452	   1168	  22664	  50284	   c46c	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:17:33 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26456	   1168	  22664	  50288	   c470	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:17:37 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+02:18:02 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+02:18:31 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26392	   1168	  22664	  50224	   c430	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:18:37 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23876	   1168	  22664	  47708	   ba5c	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:18:39 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+02:19:29 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24004	   1168	  22664	  47836	   badc	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:19:41 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+02:19:54 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24004	   1168	  22664	  47836	   badc	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:19:58 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+02:20:22 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24004	   1168	  22664	  47836	   badc	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:20:27 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24004	   1168	  22664	  47836	   badc	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:20:33 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+02:21:02 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24008	   1168	  22664	  47840	   bae0	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:21:04 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+02:21:57 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24072	   1168	  22664	  47904	   bb20	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:22:15 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24072	   1168	  22664	  47904	   bb20	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:22:20 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+02:24:12 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+02:24:58 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24168	   1168	  22664	  48000	   bb80	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:25:02 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+02:25:24 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+02:25:42 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+02:26:15 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24072	   1168	  22664	  47904	   bb20	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:26:21 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24072	   1168	  22664	  47904	   bb20	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:26:53 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:30:3: error: too few arguments to function 'usleep'
+   usleep();
+   ^~~~~~
+In file included from ../src/main.c:5:0:
+../../tkllHTR_bsp/ps7_cortexa9_0/include/sleep.h:100:6: note: declared here
+ void usleep(unsigned long useconds);
+      ^~~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+02:27:05 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24072	   1168	  22664	  47904	   bb20	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:27:11 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24072	   1168	  22664	  47904	   bb20	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:27:16 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+02:28:43 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24136	   1168	  22664	  47968	   bb60	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:28:47 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+02:33:14 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24136	   1168	  22664	  47968	   bb60	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:33:18 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+02:33:39 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24136	   1168	  22664	  47968	   bb60	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+02:33:42 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:37:44 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24136	   1168	  22664	  47968	   bb60	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+12:39:59 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24136	   1168	  22664	  47968	   bb60	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+12:44:07 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26652	   1168	  22664	  50484	   c534	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+12:44:22 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26652	   1168	  22664	  50484	   c534	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+12:46:01 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26652	   1168	  22664	  50484	   c534	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+12:47:36 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26652	   1168	  22664	  50484	   c534	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+12:47:56 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26652	   1168	  22664	  50484	   c534	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+12:48:22 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26652	   1168	  22664	  50484	   c534	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+12:49:15 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26652	   1168	  22664	  50484	   c534	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+12:52:49 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26652	   1168	  22664	  50484	   c534	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+12:53:03 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:33:8: warning: passing argument 1 of 'flush' from incompatible pointer type [-Wincompatible-pointer-types]
+  flush(&SendBuffer, BUFFER_SIZE);
+        ^
+../src/main.c:14:6: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 (*)[5] {aka unsigned char (*)[5]}'
+ void flush(u8* Buffer, u32 NumBytes){
+      ^~~~~
+../src/main.c:34:8: warning: passing argument 1 of 'flush' from incompatible pointer type [-Wincompatible-pointer-types]
+  flush(&RecvBuffer, BUFFER_SIZE);
+        ^
+../src/main.c:14:6: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 (*)[5] {aka unsigned char (*)[5]}'
+ void flush(u8* Buffer, u32 NumBytes){
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26652	   1168	  22664	  50484	   c534	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+12:53:28 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:33:8: warning: passing argument 1 of 'flush' from incompatible pointer type [-Wincompatible-pointer-types]
+  flush(&SendBuffer, BUFFER_SIZE);
+        ^
+../src/main.c:14:6: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 (*)[5] {aka unsigned char (*)[5]}'
+ void flush(u8* Buffer, u32 NumBytes){
+      ^~~~~
+../src/main.c:34:8: warning: passing argument 1 of 'flush' from incompatible pointer type [-Wincompatible-pointer-types]
+  flush(&RecvBuffer, BUFFER_SIZE);
+        ^
+../src/main.c:14:6: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 (*)[5] {aka unsigned char (*)[5]}'
+ void flush(u8* Buffer, u32 NumBytes){
+      ^~~~~
+../src/main.c:20:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26588	   1168	  22664	  50420	   c4f4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+12:53:36 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:20:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26588	   1168	  22664	  50420	   c4f4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+12:53:59 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:20:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26588	   1168	  22664	  50420	   c4f4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+12:54:23 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:20:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26588	   1168	  22664	  50420	   c4f4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+12:54:29 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:55:17 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:55:51 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:33:8: warning: passing argument 1 of 'flush' from incompatible pointer type [-Wincompatible-pointer-types]
+  flush(&SendBuffer, BUFFER_SIZE);
+        ^
+../src/main.c:14:6: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 (*)[5] {aka unsigned char (*)[5]}'
+ void flush(u8* Buffer, u32 NumBytes){
+      ^~~~~
+../src/main.c:34:8: warning: passing argument 1 of 'flush' from incompatible pointer type [-Wincompatible-pointer-types]
+  flush(&RecvBuffer, BUFFER_SIZE);
+        ^
+../src/main.c:14:6: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 (*)[5] {aka unsigned char (*)[5]}'
+ void flush(u8* Buffer, u32 NumBytes){
+      ^~~~~
+../src/main.c:53:9: warning: passing argument 1 of 'flush' from incompatible pointer type [-Wincompatible-pointer-types]
+   flush(&RecvBuffer, BUFFER_SIZE);
+         ^
+../src/main.c:14:6: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 (*)[5] {aka unsigned char (*)[5]}'
+ void flush(u8* Buffer, u32 NumBytes){
+      ^~~~~
+../src/main.c:20:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26588	   1168	  22664	  50420	   c4f4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+12:56:16 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:14:14: error: expected ';', ',' or ')' before '&' token
+ void flush(u8& Buffer, u32 NumBytes){
+              ^
+../src/main.c: In function 'main':
+../src/main.c:33:2: warning: implicit declaration of function 'flush'; did you mean 'fflush'? [-Wimplicit-function-declaration]
+  flush(SendBuffer, BUFFER_SIZE);
+  ^~~~~
+  fflush
+../src/main.c:20:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+12:56:21 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:14:15: error: expected ';', ',' or ')' before '&' token
+ void flush(u8 &Buffer, u32 NumBytes){
+               ^
+../src/main.c: In function 'main':
+../src/main.c:33:2: warning: implicit declaration of function 'flush'; did you mean 'fflush'? [-Wimplicit-function-declaration]
+  flush(SendBuffer, BUFFER_SIZE);
+  ^~~~~
+  fflush
+../src/main.c:20:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+12:56:29 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:53:9: warning: passing argument 1 of 'flush' from incompatible pointer type [-Wincompatible-pointer-types]
+   flush(&RecvBuffer, BUFFER_SIZE);
+         ^
+../src/main.c:14:6: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 (*)[5] {aka unsigned char (*)[5]}'
+ void flush(u8* Buffer, u32 NumBytes){
+      ^~~~~
+../src/main.c:20:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26588	   1168	  22664	  50420	   c4f4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+12:56:36 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:33:8: warning: passing argument 1 of 'flush' from incompatible pointer type [-Wincompatible-pointer-types]
+  flush(&SendBuffer, BUFFER_SIZE);
+        ^
+../src/main.c:14:6: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 (*)[5] {aka unsigned char (*)[5]}'
+ void flush(u8* Buffer, u32 NumBytes){
+      ^~~~~
+../src/main.c:34:8: warning: passing argument 1 of 'flush' from incompatible pointer type [-Wincompatible-pointer-types]
+  flush(&RecvBuffer, BUFFER_SIZE);
+        ^
+../src/main.c:14:6: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 (*)[5] {aka unsigned char (*)[5]}'
+ void flush(u8* Buffer, u32 NumBytes){
+      ^~~~~
+../src/main.c:53:9: warning: passing argument 1 of 'flush' from incompatible pointer type [-Wincompatible-pointer-types]
+   flush(&RecvBuffer, BUFFER_SIZE);
+         ^
+../src/main.c:14:6: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 (*)[5] {aka unsigned char (*)[5]}'
+ void flush(u8* Buffer, u32 NumBytes){
+      ^~~~~
+../src/main.c:20:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26588	   1168	  22664	  50420	   c4f4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+12:56:39 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:57:10 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'flush':
+../src/main.c:16:9: error: subscripted value is neither array nor pointer nor vector
+   Buffer[Index] = 0;
+         ^
+../src/main.c: In function 'main':
+../src/main.c:33:8: warning: passing argument 1 of 'flush' makes integer from pointer without a cast [-Wint-conversion]
+  flush(SendBuffer, BUFFER_SIZE);
+        ^~~~~~~~~~
+../src/main.c:14:6: note: expected 'u8 {aka unsigned char}' but argument is of type 'u8 * {aka unsigned char *}'
+ void flush(u8 Buffer, u32 NumBytes){
+      ^~~~~
+../src/main.c:34:8: warning: passing argument 1 of 'flush' makes integer from pointer without a cast [-Wint-conversion]
+  flush(RecvBuffer, BUFFER_SIZE);
+        ^~~~~~~~~~
+../src/main.c:14:6: note: expected 'u8 {aka unsigned char}' but argument is of type 'u8 * {aka unsigned char *}'
+ void flush(u8 Buffer, u32 NumBytes){
+      ^~~~~
+../src/main.c:53:9: warning: passing argument 1 of 'flush' makes integer from pointer without a cast [-Wint-conversion]
+   flush(RecvBuffer, BUFFER_SIZE);
+         ^~~~~~~~~~
+../src/main.c:14:6: note: expected 'u8 {aka unsigned char}' but argument is of type 'u8 * {aka unsigned char *}'
+ void flush(u8 Buffer, u32 NumBytes){
+      ^~~~~
+../src/main.c:20:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+12:57:25 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:20:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26588	   1168	  22664	  50420	   c4f4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+12:57:29 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:58:34 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:59:39 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:11:18: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+ u8* SendBuffer = malloc(); // Buffer for Transmitting Data
+                  ^~~~~~
+../src/main.c:11:18: warning: incompatible implicit declaration of built-in function 'malloc'
+../src/main.c:11:18: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../src/main.c:11:18: error: too few arguments to function 'malloc'
+../src/main.c: In function 'main':
+../src/main.c:34:8: warning: passing argument 1 of 'flush' from incompatible pointer type [-Wincompatible-pointer-types]
+  flush(RecvBuffer, BUFFER_SIZE);
+        ^~~~~~~~~~
+../src/main.c:14:6: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 ** {aka unsigned char **}'
+ void flush(u8 Buffer[], u32 NumBytes){
+      ^~~~~
+../src/main.c:48:35: warning: passing argument 2 of 'XUartPs_Recv' from incompatible pointer type [-Wincompatible-pointer-types]
+   RecvBytes = XUartPs_Recv(&Uart, RecvBuffer, BUFFER_SIZE);
+                                   ^~~~~~~~~~
+In file included from ../src/main.c:3:0:
+../../tkllHTR_bsp/ps7_cortexa9_0/include/xuartps.h:465:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 ** {aka unsigned char **}'
+ u32 XUartPs_Recv(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../src/main.c:51:23: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+   XUartPs_Send(&Uart, RecvBuffer, BUFFER_SIZE);
+                       ^~~~~~~~~~
+In file included from ../src/main.c:3:0:
+../../tkllHTR_bsp/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 ** {aka unsigned char **}'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../src/main.c:53:9: warning: passing argument 1 of 'flush' from incompatible pointer type [-Wincompatible-pointer-types]
+   flush(RecvBuffer, BUFFER_SIZE);
+         ^~~~~~~~~~
+../src/main.c:14:6: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 ** {aka unsigned char **}'
+ void flush(u8 Buffer[], u32 NumBytes){
+      ^~~~~
+../src/main.c:20:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+13:01:21 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:11:24: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+ u8* SendBuffer = (u8*) malloc(BUFFER_SIZE*sizeof(u8)); // Buffer for Transmitting Data
+                        ^~~~~~
+../src/main.c:11:24: warning: incompatible implicit declaration of built-in function 'malloc'
+../src/main.c:11:24: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../src/main.c:11:18: error: initializer element is not constant
+ u8* SendBuffer = (u8*) malloc(BUFFER_SIZE*sizeof(u8)); // Buffer for Transmitting Data
+                  ^
+../src/main.c: In function 'main':
+../src/main.c:34:8: warning: passing argument 1 of 'flush' from incompatible pointer type [-Wincompatible-pointer-types]
+  flush(RecvBuffer, BUFFER_SIZE);
+        ^~~~~~~~~~
+../src/main.c:14:6: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 ** {aka unsigned char **}'
+ void flush(u8 Buffer[], u32 NumBytes){
+      ^~~~~
+../src/main.c:48:35: warning: passing argument 2 of 'XUartPs_Recv' from incompatible pointer type [-Wincompatible-pointer-types]
+   RecvBytes = XUartPs_Recv(&Uart, RecvBuffer, BUFFER_SIZE);
+                                   ^~~~~~~~~~
+In file included from ../src/main.c:3:0:
+../../tkllHTR_bsp/ps7_cortexa9_0/include/xuartps.h:465:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 ** {aka unsigned char **}'
+ u32 XUartPs_Recv(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../src/main.c:51:23: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+   XUartPs_Send(&Uart, RecvBuffer, BUFFER_SIZE);
+                       ^~~~~~~~~~
+In file included from ../src/main.c:3:0:
+../../tkllHTR_bsp/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 ** {aka unsigned char **}'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../src/main.c:53:9: warning: passing argument 1 of 'flush' from incompatible pointer type [-Wincompatible-pointer-types]
+   flush(RecvBuffer, BUFFER_SIZE);
+         ^~~~~~~~~~
+../src/main.c:14:6: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 ** {aka unsigned char **}'
+ void flush(u8 Buffer[], u32 NumBytes){
+      ^~~~~
+../src/main.c:20:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+13:01:37 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:18: error: initializer element is not constant
+ u8* SendBuffer = (u8*) malloc(BUFFER_SIZE*sizeof(u8)); // Buffer for Transmitting Data
+                  ^
+../src/main.c: In function 'main':
+../src/main.c:35:8: warning: passing argument 1 of 'flush' from incompatible pointer type [-Wincompatible-pointer-types]
+  flush(RecvBuffer, BUFFER_SIZE);
+        ^~~~~~~~~~
+../src/main.c:15:6: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 ** {aka unsigned char **}'
+ void flush(u8 Buffer[], u32 NumBytes){
+      ^~~~~
+../src/main.c:49:35: warning: passing argument 2 of 'XUartPs_Recv' from incompatible pointer type [-Wincompatible-pointer-types]
+   RecvBytes = XUartPs_Recv(&Uart, RecvBuffer, BUFFER_SIZE);
+                                   ^~~~~~~~~~
+In file included from ../src/main.c:4:0:
+../../tkllHTR_bsp/ps7_cortexa9_0/include/xuartps.h:465:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 ** {aka unsigned char **}'
+ u32 XUartPs_Recv(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../src/main.c:52:23: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+   XUartPs_Send(&Uart, RecvBuffer, BUFFER_SIZE);
+                       ^~~~~~~~~~
+In file included from ../src/main.c:4:0:
+../../tkllHTR_bsp/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 ** {aka unsigned char **}'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../src/main.c:54:9: warning: passing argument 1 of 'flush' from incompatible pointer type [-Wincompatible-pointer-types]
+   flush(RecvBuffer, BUFFER_SIZE);
+         ^~~~~~~~~~
+../src/main.c:15:6: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'u8 ** {aka unsigned char **}'
+ void flush(u8 Buffer[], u32 NumBytes){
+      ^~~~~
+../src/main.c:21:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+13:02:35 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:18: error: initializer element is not constant
+ u8* SendBuffer = (u8*) malloc(BUFFER_SIZE*sizeof(u8)); // Buffer for Transmitting Data
+                  ^
+../src/main.c:13:18: error: initializer element is not constant
+ u8* RecvBuffer = (u8*) malloc(BUFFER_SIZE*sizeof(u8)); // Buffer for Receiving Data
+                  ^
+../src/main.c: In function 'main':
+../src/main.c:21:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+20:19:20 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:18: error: initializer element is not constant
+ u8* SendBuffer = (u8*) malloc(5*sizeof(u8)); // Buffer for Transmitting Data
+                  ^
+../src/main.c:13:18: error: initializer element is not constant
+ u8* RecvBuffer = (u8*) malloc(5*sizeof(u8)); // Buffer for Receiving Data
+                  ^
+../src/main.c: In function 'main':
+../src/main.c:21:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+20:19:36 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:18: error: initializer element is not constant
+ u8* SendBuffer = (u8*) malloc(BUFFER_SIZE*sizeof(u8)); // Buffer for Transmitting Data
+                  ^
+../src/main.c:13:18: error: initializer element is not constant
+ u8* RecvBuffer = (u8*) malloc(BUFFER_SIZE*sizeof(u8)); // Buffer for Receiving Data
+                  ^
+../src/main.c: In function 'main':
+../src/main.c:21:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+20:19:46 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:19: error: initializer element is not constant
+ int* SendBuffer = (int*) malloc(BUFFER_SIZE*sizeof(int)); // Buffer for Transmitting Data
+                   ^
+../src/main.c:13:19: error: initializer element is not constant
+ int* RecvBuffer = (int*) malloc(BUFFER_SIZE*sizeof(int)); // Buffer for Receiving Data
+                   ^
+../src/main.c: In function 'main':
+../src/main.c:34:8: warning: passing argument 1 of 'flush' from incompatible pointer type [-Wincompatible-pointer-types]
+  flush(SendBuffer, BUFFER_SIZE);
+        ^~~~~~~~~~
+../src/main.c:15:6: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'int *'
+ void flush(u8 Buffer[], u32 NumBytes){
+      ^~~~~
+../src/main.c:35:8: warning: passing argument 1 of 'flush' from incompatible pointer type [-Wincompatible-pointer-types]
+  flush(RecvBuffer, BUFFER_SIZE);
+        ^~~~~~~~~~
+../src/main.c:15:6: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'int *'
+ void flush(u8 Buffer[], u32 NumBytes){
+      ^~~~~
+../src/main.c:39:22: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart, SendBuffer, BUFFER_SIZE);
+                      ^~~~~~~~~~
+In file included from ../src/main.c:4:0:
+../../tkllHTR_bsp/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'int *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../src/main.c:49:35: warning: passing argument 2 of 'XUartPs_Recv' from incompatible pointer type [-Wincompatible-pointer-types]
+   RecvBytes = XUartPs_Recv(&Uart, RecvBuffer, BUFFER_SIZE);
+                                   ^~~~~~~~~~
+In file included from ../src/main.c:4:0:
+../../tkllHTR_bsp/ps7_cortexa9_0/include/xuartps.h:465:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'int *'
+ u32 XUartPs_Recv(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../src/main.c:52:23: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+   XUartPs_Send(&Uart, RecvBuffer, BUFFER_SIZE);
+                       ^~~~~~~~~~
+In file included from ../src/main.c:4:0:
+../../tkllHTR_bsp/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'int *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../src/main.c:54:9: warning: passing argument 1 of 'flush' from incompatible pointer type [-Wincompatible-pointer-types]
+   flush(RecvBuffer, BUFFER_SIZE);
+         ^~~~~~~~~~
+../src/main.c:15:6: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'int *'
+ void flush(u8 Buffer[], u32 NumBytes){
+      ^~~~~
+../src/main.c:21:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+20:19:55 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:18: error: initializer element is not constant
+ u8* SendBuffer = (u8*) malloc(BUFFER_SIZE*sizeof(u8)); // Buffer for Transmitting Data
+                  ^
+../src/main.c:13:18: error: initializer element is not constant
+ u8* RecvBuffer = (u8*) malloc(BUFFER_SIZE*sizeof(u8)); // Buffer for Receiving Data
+                  ^
+../src/main.c: In function 'main':
+../src/main.c:21:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+20:23:59 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:18: error: initializer element is not constant
+ u8* SendBuffer = (u8*) malloc(BUFFER_SIZE*sizeof(u8)); // Buffer for Transmitting Data
+                  ^
+../src/main.c:13:18: error: initializer element is not constant
+ u8* RecvBuffer = (u8*) malloc(BUFFER_SIZE*sizeof(u8)); // Buffer for Receiving Data
+                  ^
+../src/main.c:15:5: error: redefinition of 'SendBuffer'
+ u8* SendBuffer = malloc(BUFFER_SIZE*sizeof(*SendBuffer));
+     ^~~~~~~~~~
+../src/main.c:12:5: note: previous definition of 'SendBuffer' was here
+ u8* SendBuffer = (u8*) malloc(BUFFER_SIZE*sizeof(u8)); // Buffer for Transmitting Data
+     ^~~~~~~~~~
+../src/main.c:15:18: error: initializer element is not constant
+ u8* SendBuffer = malloc(BUFFER_SIZE*sizeof(*SendBuffer));
+                  ^~~~~~
+../src/main.c:16:5: error: redefinition of 'RecvBuffer'
+ u8* RecvBuffer = malloc(BUFFER_SIZE*sizeof(*RecvBuffer));
+     ^~~~~~~~~~
+../src/main.c:13:5: note: previous definition of 'RecvBuffer' was here
+ u8* RecvBuffer = (u8*) malloc(BUFFER_SIZE*sizeof(u8)); // Buffer for Receiving Data
+     ^~~~~~~~~~
+../src/main.c:16:18: error: initializer element is not constant
+ u8* RecvBuffer = malloc(BUFFER_SIZE*sizeof(*RecvBuffer));
+                  ^~~~~~
+../src/main.c: In function 'main':
+../src/main.c:24:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+20:24:04 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:15:18: error: initializer element is not constant
+ u8* SendBuffer = malloc(BUFFER_SIZE*sizeof(*SendBuffer));
+                  ^~~~~~
+../src/main.c:16:18: error: initializer element is not constant
+ u8* RecvBuffer = malloc(BUFFER_SIZE*sizeof(*RecvBuffer));
+                  ^~~~~~
+../src/main.c: In function 'main':
+../src/main.c:24:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+20:24:13 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:24:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29992	   2208	  22712	  54912	   d680	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+20:26:02 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:26:49 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:20:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29992	   2208	  22712	  54912	   d680	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+20:27:12 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:19:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29992	   2208	  22712	  54912	   d680	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+20:28:12 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:21:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30248	   2208	  22712	  55168	   d780	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+20:28:17 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:29:25 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:32:9: error: 'Buffer' undeclared (first use in this function); did you mean 'RecvBuffer'?
+  memset(Buffer, 0, BUFFER_SIZE);
+         ^~~~~~
+         RecvBuffer
+../src/main.c:32:9: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:51:3: warning: implicit declaration of function 'flush' [-Wimplicit-function-declaration]
+   flush(RecvBuffer, BUFFER_SIZE);
+   ^~~~~
+../src/main.c:19:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+At top level:
+../src/main.c:13:11: warning: 'RecvBuffer' defined but not used [-Wunused-variable]
+ static u8 RecvBuffer[BUFFER_SIZE];
+           ^~~~~~~~~~
+../src/main.c:12:11: warning: 'SendBuffer' defined but not used [-Wunused-variable]
+ static u8 SendBuffer[BUFFER_SIZE];
+           ^~~~~~~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+20:29:37 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:29:9: error: 'Buffer' undeclared (first use in this function); did you mean 'RecvBuffer'?
+  memset(Buffer, 0, BUFFER_SIZE);
+         ^~~~~~
+         RecvBuffer
+../src/main.c:29:9: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:48:3: warning: implicit declaration of function 'flush' [-Wimplicit-function-declaration]
+   flush(RecvBuffer, BUFFER_SIZE);
+   ^~~~~
+../src/main.c:16:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+20:29:45 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:48:3: warning: implicit declaration of function 'flush' [-Wimplicit-function-declaration]
+   flush(RecvBuffer, BUFFER_SIZE);
+   ^~~~~
+../src/main.c:16:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `main':
+C:\Users\dangn\Dropbox\it\CodingSpace\tkllHTR\build\tkllHTR.sdk\tkllHTR\Debug/../src/main.c:48: undefined reference to `flush'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: tkllHTR.elf] Error 1
+20:30:21 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:16:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26780	   1168	  22664	  50612	   c5b4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+20:30:29 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:31:05 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:16:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26776	   1168	  22664	  50608	   c5b0	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+20:31:29 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:16:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26776	   1168	  22664	  50608	   c5b0	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+20:31:34 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:32:16 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:16:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26780	   1168	  22664	  50612	   c5b4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+20:32:45 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:16:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26780	   1168	  22664	  50612	   c5b4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+20:32:54 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:16:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26780	   1168	  22664	  50612	   c5b4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+20:33:17 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26780	   1168	  22664	  50612	   c5b4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+20:34:14 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:16:6: warning: unused variable 'RecvBytes' [-Wunused-variable]
+  int RecvBytes;
+      ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24356	   1160	  22664	  48180	   bc34	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+20:34:27 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24356	   1160	  22664	  48180	   bc34	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+20:34:33 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:35:10 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24356	   1160	  22664	  48180	   bc34	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
