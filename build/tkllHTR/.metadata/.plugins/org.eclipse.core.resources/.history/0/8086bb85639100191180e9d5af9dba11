@@ -1,0 +1,14 @@
+/*
+ * mlp.h
+ *
+ *  Created on: Jun 16, 2019
+ *      Author: tienanh
+ */
+
+#ifndef SRC_MLP_H_
+#define SRC_MLP_H_
+
+double** ReLU(double **input);
+double SoftMax(double** input);
+int MLP(double **INPUT);
+#endif /* MLP_h */

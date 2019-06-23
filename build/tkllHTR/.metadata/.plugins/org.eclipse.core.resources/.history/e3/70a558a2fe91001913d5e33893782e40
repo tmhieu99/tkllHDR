@@ -1,0 +1,51 @@
+/*
+ * matrix.c
+ *
+ *  Created on: Jun 16, 2019
+ *      Author: dangn
+ */
+
+#include <stdlib.h>
+
+double** new_matrix(int row, int col){
+	double** a = malloc((row + 1)*sizeof(*a));
+	for (int i = 0 ; i < row ; ++i) a[i] = malloc((col + 1)*sizeof(a[i]));
+	return a;
+}
+
+void del_matrix(double** a, int row){
+	for (int i = 0 ; i < row ; ++i) free(a[i]);
+	free(a);
+}
+
+double** add(double** a, double** b, int ra, int ca, int rb, int cb){
+	if (ra != rb || ca != cb){
+		xil_printf("Error: Matrices dimensions mismatch.\n\r");
+		return 0; // return NULL
+	}
+
+	double** c = new_matrix(ra, ca);
+
+	for (int i = 0 ; i < ra ; ++i)
+		for (int j = 0 ; j < ca ; ++j)
+			c[i][j] = a[i][j] + b[i][j];
+
+	return c;
+}
+
+
+double** mul(double** a, double** b, int ra, int ca, int rb, int cb){
+	if (ca != rb){
+		xil_printf("Error: Matrices dimensions mismatch.\n\r");
+		return 0; // return NULL
+	}
+
+	double** c = new_matrix(ra, cb);
+
+	for (int i = 0; i < ra; i++)
+	    for (int k = 0; k < cb; k++)
+	        for (int j = 0; j < ca; j++)
+	            c[i][j] += c[i][k] * c[k][j];
+
+	return c;
+}

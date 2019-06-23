@@ -1,0 +1,27 @@
+/*
+ * matrix.h
+ *
+ *  Created on: Jun 16, 2019
+ *      Author: dangn
+ */
+
+#ifndef SRC_MATRIX_H_
+#define SRC_MATRIX_H_
+
+#include <stdlib.h>
+
+double** new_matrix(int row, int col);
+void del_matrix(double** a, int row);
+double** add(double** a, double** b, int ra, int ca, int rb, int cb);
+double** mul(double** a, double** b, int ra, int ca, int rb, int cb);
+
+typedef struct Matrix Matrix;
+struct Matrix {
+	int row;
+	int col;
+	double** at;
+
+};
+
+
+#endif /* SRC_MATRIX_H_ */

@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <math.h>
+#include "matrix.h"
+
+// Number of units in each layer
+#define UNIT_LAYER_INPUT	784
+#define UNIT_LAYER_1		64
+#define UNIT_LAYER_OUTPUT	10
+
+Matrix ReLU(Matrix* input){
+    Matrix result = new_matrix(input->row, input->col);
+    for(int i = 0 ; i < result.row ; i++)
+    	for (int j = 0 ; j < result.col ; j++)
+    		result.at[i][j] = input->at[i][j] >= 0 ? input->at[i][j] : 0;
+    return result;
+}
+
+Matrix SoftMax(Matrix* input){
+	Matrix exponential = new_matrix(row, 1);
+    for(int i=0; i<row; i++)
+    	exponential[i][0] = exp(input[i][0]);
+    double sum = 0;
+    for(int i=0; i<row; i++)
+    	sum += exponential[i][0];
+    for(int i=0; i<row; i++)
+    	exponential[i][0] /= sum;
+    int maxIndex = 0;
+    for(int i=1; i<row; i++)
+		if (exponential[i][0] > exponential[maxIndex][0])
+			maxIndex = i;
+    return input[maxIndex][0];
+}
+
+int MLP(Matrix input){
+	Matrix w1 = new_matrix(UNIT_LAYER_INPUT, UNIT_LAYER_1);		// 784x64
+	Matrix b1 = new_matrix(1, UNIT_LAYER_1);					// 1x64
+	Matrix w2 = new_matrix(UNIT_LAYER_1, UNIT_LAYER_OUTPUT);	// 64x10
+	Matrix b2 = new_matrix(1, UNIT_LAYER_OUTPUT);				// 1x10
+
+	Matrix hidden_1;
+	Matrix output;
+
+    int result = -1;
+
+    hidden_1 = ReLU(add(&(mul(input, w1)), b1));
+    output  = ReLU(add(&mul(hidden_1, w2), b2));
+    return result = SoftMax(output);
+}
