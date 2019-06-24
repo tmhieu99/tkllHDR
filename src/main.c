@@ -11,7 +11,7 @@
 #include "xil_printf.h"
 #include "sleep.h"
 #include "mlp.h"
-#include "matrix.h"
+#include "operations.h"
 
 #define INPUT_SIZE			784
 #define BUFFER_SIZE 		(INPUT_SIZE*3 + INPUT_SIZE)
@@ -22,7 +22,7 @@
 int main(){
 	char buffer[BUFFER_SIZE];
 	int state = IDLE_STATE;
-	int result = -1;
+	int result;
     double input[1][INPUT_SIZE];
     char* token;
 
@@ -48,9 +48,55 @@ int main(){
 				for (int i = 0 ; i < INPUT_SIZE ; ++i)
 					input[0][i] /= 255.0;
 
+
+
+
+
+
+
+				/*----------------- FOR DEBUGGING PURPOSE -----------------*/
+				//MLP(input);
 				xil_printf("Begin MLP\n");
-				MLP(input);
+
+
+
+
+
+				double w0[UNIT_LAYER_INPUT][UNIT_LAYER_1] 	= WEIGHT_0;
+				double b0[1][UNIT_LAYER_1] 					= BIAS_0;
+				double w1[UNIT_LAYER_1][UNIT_LAYER_OUTPUT] 	= WEIGHT_1;
+				double b1[1][UNIT_LAYER_OUTPUT] 			= BIAS_1;
+
+				double hidden[1][UNIT_LAYER_1];
+				MUL(hidden, input,  w0);
+				ADD(hidden, hidden, b0);
+				RELU(hidden);
+
+				double output[1][UNIT_LAYER_OUTPUT];
+				MUL(output, hidden, w1);
+				ADD(output, output, b1);
+				RELU(output);
+				SOFTMAX(output);
+
+				result = 0;
+				for (int i = 0 ; i < LEN(output[0]) ; i++)
+					if (output[0][i] > output[0][result])
+						result = i;
+
+
+
+
+
+
 				xil_printf("End MLP\n");
+
+				/*----------------- FOR DEBUGGING PURPOSE -----------------*/
+
+
+
+
+
+
 				state = RESULT_STATE;
 				break;
 

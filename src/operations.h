@@ -1,12 +1,12 @@
 /*
- * matrix.h
+ * operations.h
  *
  *  Created on: Jun 16, 2019
  *      Author: dangn
  */
 
-#ifndef SRC_MATRIX_H_
-#define SRC_MATRIX_H_
+#ifndef SRC_OPERATIONS_H_
+#define SRC_OPERATIONS_H_
 
 #include "xil_printf.h"
 
@@ -33,4 +33,20 @@
     }																										\
 }
 
-#endif /* SRC_MATRIX_H_ */
+#define RELU(a) {																							\
+    for (int i = 0 ; i < LEN(a) ; ++i)																		\
+        for (int j = 0 ; j < LEN(a[0]) ; ++j)																\
+            a[i][j] = (a[i][j] > 0 ? a[i][j] : 0);															\
+}
+
+#define SOFTMAX(a) {																						\
+    double sum = 0;																							\
+	for(int i = 0 ; i < LEN(a) ; i++)																		\
+    	for (int j = 0 ; j < LEN(a[0]) ; j++)																\
+            sum += (a[i][j] = exp(a[i][j]));																\
+	for(int i = 0 ; i < LEN(a) ; i++)																		\
+    	for (int j = 0 ; j < LEN(a[0]) ; j++)																\
+    		a[i][j] /= sum;																					\
+}
+
+#endif /* SRC_OPERATIONS_H_ */
