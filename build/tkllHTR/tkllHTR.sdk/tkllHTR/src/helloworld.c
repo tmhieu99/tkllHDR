@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2009 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2010 - 2014 Xilinx, Inc.  All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -11,10 +11,6 @@
 *
 * The above copyright notice and this permission notice shall be included in
 * all copies or substantial portions of the Software.
-*
-* Use of the Software is limited solely to applications:
-* (a) running on a Xilinx device, or
-* (b) that interact with a Xilinx device through a bus or interconnect.
 *
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -29,59 +25,277 @@
 * this Software without prior written authorization from Xilinx.
 *
 ******************************************************************************/
+/****************************************************************************/
+/**
+* @file     xuartps_low_echo_example.c
+*
+* This file contains a design example using the hardware interface.
+*
+* First, certain character sequence is output onto the terminal. Then any
+* characters typed in are echoed back, for letters, cases are switched.
+* An 'ESC' character terminates the execution of the example.
+*
+* This example requires an external SchmartModule to be connected to the
+* appropriate pins for the device through a daughter board. The test uses
+* the default settings of the device:
+*	. baud rate of 9600
+*	. 8 bits data
+* 	. 1 stop bit
+* 	. no parity
+*
+* @note
+* The test hangs if communication channel from the user terminal to the device
+* is broken.
+*
+* MODIFICATION HISTORY:
+* <pre>
+* Ver   Who    Date     Changes
+* ----- ------ -------- -----------------------------------------------------
+* 1.00a drg/jz 01/13/10 First release
+* 3.4   ms     01/23/17 Added xil_printf statement in main function to
+*                       ensure that "Successfully ran" and "Failed" strings
+*                       are available in all examples. This is a fix for
+*                       CR-965028.
+* </pre>
+****************************************************************************/
 
-/*
- * helloworld.c: simple test application
- *
- * This application configures UART 16550 to baud rate 9600.
- * PS7 UART (Zynq) is not initialized by this application, since
- * bootrom/bsp configures it to baud rate 115200
- *
- * ------------------------------------------------
- * | UART TYPE   BAUD RATE                        |
- * ------------------------------------------------
- *   uartns550   9600
- *   uartlite    Configurable only in HW design
- *   ps7_uart    115200 (configured by bootrom/bsp)
- */
+/***************************** Include Files *******************************/
 
-#include <stdio.h>
-#include "platform.h"
+#include "xparameters.h"
+#include "xstatus.h"
+#include "xil_types.h"
+#include "xil_assert.h"
+#include "xuartps_hw.h"
 #include "xil_printf.h"
 
+/************************** Constant Definitions ***************************/
+
 /*
-void print_double(double a, int dpoint){
-	long fix_part = a;
-	double temp = (a - fix_part);
-	for (int i = 0 ; i < dpoint ; ++i) temp *= 10;
-	long frac_part = temp;
-	xil_printf("%d.%d\n\r", fix_part, frac_part);
-}
-*/
+ * The following constants map to the XPAR parameters created in the
+ * xparameters.h file. They are defined here such that a user can easily
+ * change all the needed parameters in one place.
+ */
+#define UART_BASEADDR		XPAR_XUARTPS_0_BASEADDR
+#define UART_CLOCK_HZ		XPAR_XUARTPS_0_CLOCK_HZ
+#define IDLE_STATE 			1
+#define EXECUTION_STATE 	2
+#define RESULT_STATE 		3
+/*
+ * The following constant controls the length of the buffers to be sent
+ * and received with the device. This constant must be 32 bytes or less so the
+ * entire buffer will fit into the TX and RX FIFOs of the device.
+ */
+#define TEST_BUFFER_SIZE	16
 
-void print_double(double a, int precision){
-	// Get the fraction part
-	a = a - (int)a;
-	xil_printf("0.");
-	for (int i = 0 ; i < precision ; ++i){
-		a *= 10;
-		xil_printf("%d", (int)a);
-		a = a - (int)a;
-	}
-	xil_printf("\n\r");
-}
+#define CHAR_ESC		0x1b	/* 'ESC' character is used as terminator */
 
-int main()
+/**************************** Type Definitions *****************************/
+
+/***************** Macros (Inline Functions) Definitions *******************/
+
+/************************** Function Prototypes ****************************/
+
+int UartPsEchoExample(u32 UartBaseAddress);
+
+/************************** Variable Definitions ***************************/
+
+/*
+ * The following buffers are used in this example to send and receive data
+ * with the UART.
+ */
+u8 SendBuffer[TEST_BUFFER_SIZE];	/* Buffer for Transmitting Data */
+
+
+/***************************************************************************/
+/**
+*
+* Main function to call the Uart Echo example.
+*
+* @param	None
+*
+* @return	XST_SUCCESS if successful, XST_FAILURE if unsuccessful
+*
+* @note		None
+*
+****************************************************************************/
+int main(void)
 {
-    init_platform();
+	int Status;
 
-    double a = 0.22222222222222222222222222222;
-    double b = 0.22222222222222222222222222222;
 
-    for (int dpoint = 0 ; dpoint < 32 ; ++dpoint){
-    	print_double(a + b, dpoint);
-    }
 
-    cleanup_platform();
-    return 0;
+	/*
+	 * Run the Uart Echo example , specify the Base Address that is
+	 * generated in xparameters.h
+	 */
+	Status = UartPsEchoExample(UART_BASEADDR);
+
+
+	if (Status != XST_SUCCESS) {
+		xil_printf("Uartps low echo Example Failed\r\n");
+		return XST_FAILURE;
+	}
+
+	xil_printf("Successfully ran Uartps low echo Example\r\n");
+
+
+
+	return XST_SUCCESS;
+
 }
+
+
+/**************************************************************************/
+/**
+*
+* This function does a minimal test on the UART device using the hardware
+* interface.
+*
+* @param	UartBaseAddress is the base address of the device
+*
+* @return	XST_SUCCESS if successful, XST_FAILURE if unsuccessful
+*
+* @note		None.
+*
+**************************************************************************/
+int UartPsEchoExample(u32 UartBaseAddress)
+{
+	int Index;
+	u8 RecvChar;
+	u32 CntrlRegister;
+	int state = IDLE_STATE;
+
+
+			switch(state) {
+				case IDLE_STATE: {
+
+					CntrlRegister = XUartPs_ReadReg(UartBaseAddress, XUARTPS_CR_OFFSET);
+						/* Enable TX and RX for the device */
+					XUartPs_WriteReg(UartBaseAddress, XUARTPS_CR_OFFSET,
+								  ((CntrlRegister & ~XUARTPS_CR_EN_DIS_MASK) |
+								   XUARTPS_CR_TX_EN | XUARTPS_CR_RX_EN));
+
+					for (Index = 0; Index < TEST_BUFFER_SIZE; Index++) {
+							/* Wait until there is space in TX FIFO */
+						while (XUartPs_IsTransmitFull(UartBaseAddress));
+
+							/* Write the byte into the TX FIFO */
+						XUartPs_WriteReg(UartBaseAddress, XUARTPS_FIFO_OFFSET,
+									  SendBuffer[Index]);
+					}
+					state=EXECUTION_STATE;
+					break;
+
+				}
+				case EXECUTION_STATE: {
+					while (!XUartPs_IsReceiveData(UartBaseAddress));
+						RecvChar = XUartPs_ReadReg(UartBaseAddress,
+															XUARTPS_FIFO_OFFSET);
+					if (RecvChar = 'a'){
+								RecvChar = RecvChar - 'a' + 'A';
+					}
+					state=RESULT_STATE;
+					break;
+				}
+				case RESULT_STATE: {
+					XUartPs_WriteReg(UartBaseAddress,  XUARTPS_FIFO_OFFSET,
+									  RecvChar);
+					break;
+				}
+			}
+
+	return XST_SUCCESS;
+}
+/*
+
+#include "xparameters.h"
+#include "xstatus.h"
+#include "xil_types.h"
+#include "xil_assert.h"
+#include "xuartps_hw.h"
+#include "xil_printf.h"
+
+
+#define UART_BASEADDR		XPAR_XUARTPS_0_BASEADDR
+#define UART_CLOCK_HZ		XPAR_XUARTPS_0_CLOCK_HZ
+
+#define TEST_BUFFER_SIZE	16
+
+#define CHAR_ESC		0x1b
+
+
+int UartPsEchoExample(u32 UartBaseAddress);
+
+
+
+u8 SendBuffer[TEST_BUFFER_SIZE];
+
+
+
+int main(void)
+{
+	int Status;
+
+
+	Status = UartPsEchoExample(UART_BASEADDR);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Uartps low echo Example Failed\r\n");
+		return XST_FAILURE;
+	}
+
+	xil_printf("Successfully ran Uartps low echo Example\r\n");
+	return XST_SUCCESS;
+}
+
+
+
+int UartPsEchoExample(u32 UartBaseAddress)
+{
+	int Index;
+	u32 Running;
+	u8 RecvChar;
+	u32 CntrlRegister;
+
+	CntrlRegister = XUartPs_ReadReg(UartBaseAddress, XUARTPS_CR_OFFSET);
+
+	XUartPs_WriteReg(UartBaseAddress, XUARTPS_CR_OFFSET,
+			  ((CntrlRegister & ~XUARTPS_CR_EN_DIS_MASK) |
+			   XUARTPS_CR_TX_EN | XUARTPS_CR_RX_EN));
+
+	for (Index = 0; Index < TEST_BUFFER_SIZE; Index++) {
+		SendBuffer[Index] = Index + '0';
+	}
+
+	for (Index = 0; Index < TEST_BUFFER_SIZE; Index++) {
+		 while (XUartPs_IsTransmitFull(UartBaseAddress));
+
+				  SendBuffer[Index]);
+	}
+
+	Running = TRUE;
+	while (Running) {
+		while (!XUartPs_IsReceiveData(UartBaseAddress));
+
+		RecvChar = XUartPs_ReadReg(UartBaseAddress,
+					    XUARTPS_FIFO_OFFSET);
+
+		if (('a' <= RecvChar) && ('z' >= RecvChar)) {
+			RecvChar = RecvChar - 'a' + 'A';
+		}
+		else if (('A' <= RecvChar) && ('Z' >= RecvChar)) {
+			RecvChar = RecvChar - 'A' + 'a';
+		}
+		else if (RecvChar == 0b00000100){
+			RecvChar = RecvChar + 3;
+		}
+		else if (CHAR_ESC == RecvChar) {
+			Running = FALSE;
+		}
+
+		XUartPs_WriteReg(UartBaseAddress,  XUARTPS_FIFO_OFFSET,
+				  RecvChar);
+	}
+	return XST_SUCCESS;
+}
+
+ */
