@@ -8,6 +8,17 @@ import numpy as np
 import glob
 import sys
 
+MARGIN_L        = 10
+MARGIN_T        = 10
+BUTTON_HEIGHT   = 2
+BUTTON_WIDTH    = 20
+CBUTTON_HEIGHT  = 2
+CBUTTON_WIDTH   = 17
+TEXTBOX_HEIGHT  = 22
+TEXTBOX_WIDTH   = 50
+MENU_HEIGHT     = 1
+MENU_WIDTH      = 15
+
 class Picture:
     def __init__(self, image_name, greyscale = True):
         self.image_cv = cv2.imread(image_name, 0)
@@ -42,6 +53,7 @@ def available_ports():
             result.append(port)
         except (OSError, serial.SerialException):
             pass
+    if len(result) == 0: result.append("None")
     return result
 
 def import_image():
@@ -59,6 +71,10 @@ def import_image():
         except:
             print("Invalid image type")
   
+def update_text(data):
+    data = data.decode('utf-8')
+    text.insert(END, data)
+
 def push_image():
     # Get picture data in matrix form
     data = subject.mat()
@@ -66,71 +82,98 @@ def push_image():
     # Flatten the matrix to a 1D-vector 784 long
     data = data.reshape(data.shape[0]*data.shape[1])
 
-    # Convert from int to bytes
-    data = bytes(data)
+    # Convert list to string with leading zeros to fit the data data format
+    converted_data = ''
+    for i in range(len(data)):
+        if i != 0: converted_data = converted_data + ","
+        converted_data = converted_data + str(data[i])
+
+    # Convert to byte string
+    converted_data = converted_data.encode('utf-8')
 
     # Clear serial buffer
     ser.flush()
 
     # Send data to Zedboard
-    ser.write(data) 
+    ser.write(converted_data + b'\n')
 
-def connect():
+    # Wait for result
+    x = ser.readline()
+
+    # Show result on screen
+    update_text(x)
+
+def connect(port):
+    if port == "None": return
     try:
         global ser
-        ser = serial.Serial(port = selected_port.get(),
+        ser = serial.Serial(port = port,
                             baudrate = 115200,
-                            timeout = 1)
+                            timeout = 1,
+                            parity=serial.PARITY_EVEN)
     except:
         print("Error occured while connecting to selected port. Please try again.")
 
 def update_ports(event):
+    try: ser.close()
+    except: pass
     port_list = available_ports()
     tmp = port_menu["menu"]
     tmp.delete(0, "end")
-    if len(port_list) == 0: port_list.append("None")
     for port in port_list: tmp.add_command(label = port)
     selected_port.set(port_list[0])
-    connect()
+    connect(selected_port.get())
+
+def new_menu(root, x, y, selected_port, port_list, cmd, w = MENU_WIDTH, h = MENU_HEIGHT, bg = 'white'):
+    menu = OptionMenu(root, selected_port, *port_list)
+    menu.config(bg = bg, width = w, height = h)
+    menu.bind("<Button-1>", cmd)
+    menu.place(x = x, y = y)
+    return menu
+
+def new_image(root, x, y):
+    image = Label(root)
+    image.place(x = x, y = y)
+    return image
+
+def new_textbox(root, x, y, w = TEXTBOX_WIDTH, h = TEXTBOX_HEIGHT):
+    textbox = Text(root, width = TEXTBOX_WIDTH, height = TEXTBOX_HEIGHT)
+    textbox.place(x = x, y = y)
+    return textbox
+
+def new_button(root, x, y, txt, cmd, w = BUTTON_WIDTH, h = BUTTON_HEIGHT, bg = 'white'):
+    button = Button(root, width = w, height = h, bg = bg, text = txt, command = cmd)
+    button.place(x = x, y = y)
+    return button
+
+def new_checkbutton(root, x, y, txt, var, w = CBUTTON_WIDTH, h = CBUTTON_HEIGHT):
+    checkbutton = Checkbutton(root, width = w, height = h, variable = var, text = txt)
+    checkbutton.place(x = x, y = y)
+    checkbutton.select()
+    return checkbutton
 
 if __name__ == "__main__":
-    ser = None
-
     # Setup window
     root = Tk()
-    root.config(bg = 'white')
-    root.title('Zedboard communicator')
-    root.geometry('500x500')
-    #root.resizable(False, False)
+    root.title('Zedboard Communicator')
+    root.geometry('635x400')
+    root.resizable(False, False)
 
     # Variables
+    ser = None
     greyscale = BooleanVar()
-    selected_port = StringVar(root)
     port_list = available_ports()
-    if len(port_list) == 0: port_list.append("None")
+    selected_port = StringVar(root)
     selected_port.set(port_list[0])
-    connect() 
+    connect(selected_port.get()) 
     
     # Widgets
-    port_menu   = OptionMenu(root, selected_port, *port_list)
-    port_menu.config(bg = "white", width = 10)
-    port_menu.bind("<Button-1>", update_ports)
-
-    image       = Label(root)
-    text        = Text(root, width = 30, height = 18)
-    b_import    = Button(root, bg = 'white', text = 'Import image', command = import_image)
-    b_greyscale = Checkbutton(root, bg = 'white', variable = greyscale, text = 'Greyscale')
-    b_push      = Button(root, bg = 'white', text = 'Push', command = push_image)
-
-    b_greyscale.select()
-
-    # Positioning
-    port_menu.grid(row = 0, column = 0)
-    b_import.grid(row = 0, column = 1)
-    b_push.grid(row = 0, column = 2, sticky = W)
-    b_greyscale.grid(row = 0, column = 3)
-    image.grid(row = 1, column = 0, sticky = W) 
-    text.grid(row = 1, column = 1)
+    port_menu   = new_menu(root, MARGIN_L-3, MARGIN_T-1, selected_port, port_list, update_ports)
+    b_import    = new_button(root, MARGIN_L, 60, 'Import image', import_image)
+    b_push      = new_button(root, MARGIN_L, 110, 'Push image', push_image)
+    gs_cbutton  = new_checkbutton(root, MARGIN_L, 160, 'Greyscale', greyscale)
+    image       = new_image(root, 70, 220)
+    text        = new_textbox(root, 170, MARGIN_T)
 
     # Main loop
     root.mainloop()
