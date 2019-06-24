@@ -1,8 +1,8 @@
-16:29:43 **** Incremental Build of configuration Debug for project tkllHTR ****
+03:31:49 **** Incremental Build of configuration Debug for project tkllHTR ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
 
-16:29:43 Build Finished (took 323ms)
+03:31:49 Build Finished (took 336ms)
 

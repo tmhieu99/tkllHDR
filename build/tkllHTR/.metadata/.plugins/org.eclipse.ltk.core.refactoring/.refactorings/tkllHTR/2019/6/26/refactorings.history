@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;tkllHTR/src/layers.h&apos; to &apos;params.h&apos;" description="Rename resource &apos;layers.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/layers.h" name="params.h" stamp="1561407151024" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;tkllHTR/src/matrix.h&apos; to &apos;operations.h&apos;" description="Rename resource &apos;matrix.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/matrix.h" name="operations.h" stamp="1561407202362" updateReferences="true"/>
+</session>

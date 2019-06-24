@@ -12,5 +12,4 @@ rst -processor
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248782650"} -index 0
 dow C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build/tkllHTR.sdk/tkllHTR/Debug/tkllHTR.elf
 configparams force-mem-access 0
-targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248782650"} -index 0
-con
+bpadd -addr &main
