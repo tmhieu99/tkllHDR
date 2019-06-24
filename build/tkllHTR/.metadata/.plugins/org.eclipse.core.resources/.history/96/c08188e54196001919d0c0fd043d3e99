@@ -6,7 +6,7 @@
 #include "matrix.h"
 
 #define INPUT_SIZE			10
-#define BUFFER_SIZE 		(INPUT_SIZE*3 + 1)
+#define BUFFER_SIZE 		(INPUT_SIZE*3 + 1)	// *3 since each number is represented as 'xxx', +1 for '\0' character
 #define IDLE_STATE 			1
 #define EXECUTION_STATE 	2
 #define RESULT_STATE 		3
@@ -19,13 +19,9 @@ int main(){
 	while (1) {
 		switch (state) {
 			case IDLE_STATE:
-				/*
-				 *
-				 * 	To be fix by Hieu
-				 *
-				 */
 
-//				Normalize input to 0-1
+
+				// Normalize input to 0-1
 //				for (int i = 0 ; i < INPUT_SIZE ; ++i)
 //					input.at[0][i] /= 255.0;
 
@@ -34,15 +30,19 @@ int main(){
 
 			case EXECUTION_STATE:
 				//result = MLP(input);
+				result = input.at[0][0];
 				state = RESULT_STATE;
 				break;
 
 			case RESULT_STATE:
-				/*
-				 *
-				 * 	To be fix by Hieu
-				 *
-				 */
+				for (int i = 0 ; i < INPUT_SIZE ; ++i){
+					for (int j = i*3 + 2 ; j >= i*3 ; --j){
+						SendBuffer[j] = (int)(input.at[0][i]) % 10 + '0';
+						input.at[0][i] = (int)(input.at[0][i]) / 10;
+					}
+				}
+				SendBuffer[BUFFER_SIZE-1] = '\n';
+				XUartPs_Send(&Uart, SendBuffer, BUFFER_SIZE);
 				state = IDLE_STATE;
 				break;
 
