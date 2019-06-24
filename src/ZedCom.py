@@ -60,27 +60,20 @@ def import_image():
             print("Invalid image type")
   
 def push_image():
+    # Get picture data in matrix form
     data = subject.mat()
-    data = list(data.reshape(data.shape[0]*data.shape[1]))
-    ser.flush()
-    ser.flushInput()
-    ser.flushOutput()
-    ser.write(data)
-    print("-----------------------")
-    cnt = 0
-    while ser.inWaiting():
-        s = ser.readline()
-        s = s.decode()[:len(s)-2]
-        #print(s, end = '')
-        print("%3s" % (s), end = '')
-        cnt += 1
-        if cnt == 28:
-            print()
-            cnt = 0
 
-        '''
-        text.insert(END, s + " ")
-        '''
+    # Flatten the matrix to a 1D-vector 784 long
+    data = data.reshape(data.shape[0]*data.shape[1])
+
+    # Convert from int to bytes
+    data = bytes(data)
+
+    # Clear serial buffer
+    ser.flush()
+
+    # Send data to Zedboard
+    ser.write(data) 
 
 def connect():
     try:

@@ -1,0 +1,13 @@
+/*
+ * main.c
+ *
+ *  Created on: Jun 16, 2019
+ *      Author: dangn
+ */
+
+#include "xil_printf.h"
+
+int main(){
+	xil_printf("Hello");
+	return 0;
+}

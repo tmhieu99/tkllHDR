@@ -1,0 +1,52 @@
+/*
+ * uart.c
+ *
+ *  Created on: Apr 12, 2017
+ *      Author: Erwin Ouyang
+ */
+
+#include <stdio.h>
+#include "xgpio.h"
+
+XGpio led;
+char cmd[4];
+uint8_t led_value;
+
+int main()
+{
+	// Initialize AXI GPIO for LED
+	XGpio_Initialize(&led, XPAR_AXI_GPIO_0_DEVICE_ID);
+	XGpio_SetDataDirection(&led, 1, 0x00000000);
+
+    while (1)
+    {
+    	// Get command from PC
+    	printf("Enter Command: ");
+    	gets(cmd);
+    	printf("Entered Command: %s\n\n", cmd);
+
+    	// Translate command to LED value
+    	if (cmd[0] == '1')
+    		led_value |= (1 << 3);
+    	else
+    		led_value &= ~(1 << 3);
+
+    	if (cmd[1] == '1')
+    		led_value |= (1 << 2);
+    	else
+    		led_value &= ~(1 << 2);
+
+    	if (cmd[2] == '1')
+    		led_value |= (1 << 1);
+    	else
+    		led_value &= ~(1 << 1);
+
+    	if (cmd[3] == '1')
+    		led_value |= (1 << 0);
+    	else
+    		led_value &= ~(1 << 0);
+
+    	// Write LED value to AXI GPIO
+    	XGpio_DiscreteWrite(&led, 1, led_value);
+    }
+}
