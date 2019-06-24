@@ -5,16 +5,19 @@
 #include "mlp.h"
 #include "matrix.h"
 
-#define INPUT_SIZE			10
-#define BUFFER_SIZE 		(INPUT_SIZE*3 + 1)
+#define INPUT_SIZE			784
+#define BUFFER_SIZE 		(INPUT_SIZE*3 + INPUT_SIZE)
 #define IDLE_STATE 			1
 #define EXECUTION_STATE 	2
 #define RESULT_STATE 		3
 
 int main(){
+
+	char buffer[3136];
+	char* token = strtok(str, ",");
 	int state = IDLE_STATE;
 	int result = -1;
-	Matrix input = new_matrix(1, 784);
+	Matrix input = new_matrix(1, INPUT_SIZE);
 
 	while (1) {
 		switch (state) {
@@ -24,6 +27,7 @@ int main(){
 				 * 	To be fix by Hieu
 				 *
 				 */
+				gets(buffer);
 
 //				Normalize input to 0-1
 //				for (int i = 0 ; i < INPUT_SIZE ; ++i)
@@ -31,8 +35,9 @@ int main(){
 
 				state = EXECUTION_STATE;
 				break;
-
+				
 			case EXECUTION_STATE:
+				input = strtok(buffer, ",");
 				//result = MLP(input);
 				state = RESULT_STATE;
 				break;
