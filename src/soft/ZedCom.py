@@ -72,10 +72,11 @@ def import_image():
             print("Invalid image type")
   
 def update_text(data):
+    print(data)
     data = data.decode('utf-8')
     text.insert(END, data)
 
-def push_image():
+def push_image(ser):
     # Get picture data in matrix form
     data = subject.mat()
 
@@ -89,28 +90,24 @@ def push_image():
         converted_data = converted_data + str(data[i])
 
     # Convert to byte string
-    converted_data = converted_data.encode('utf-8')
+    converted_data = converted_data.encode('ascii') + b'\n'
 
-    # Clear serial buffer
-    ser.flush()
-
+    print(converted_data)
     # Send data to Zedboard
-    ser.write(converted_data + b'\n')
+    ser.write(converted_data)
 
     # Wait for result
-    x = ser.readline()
+    #x = ser.readline()
+    #x = ser.readlines()
 
     # Show result on screen
-    update_text(x)
+    #update_text(x)
 
 def connect(port):
     if port == "None": return
     try:
-        global ser
-        ser = serial.Serial(port = port,
-                            baudrate = 115200,
-                            timeout = 1,
-                            parity=serial.PARITY_EVEN)
+        ser = serial.Serial(port, 115200, timeout = 1)
+        return ser
     except:
         print("Error occured while connecting to selected port. Please try again.")
 
@@ -122,7 +119,7 @@ def update_ports(event):
     tmp.delete(0, "end")
     for port in port_list: tmp.add_command(label = port)
     selected_port.set(port_list[0])
-    connect(selected_port.get())
+    ser = connect(selected_port.get())
 
 def new_menu(root, x, y, selected_port, port_list, cmd, w = MENU_WIDTH, h = MENU_HEIGHT, bg = 'white'):
     menu = OptionMenu(root, selected_port, *port_list)
@@ -158,22 +155,22 @@ if __name__ == "__main__":
     root.title('Zedboard Communicator')
     root.geometry('635x400')
     root.resizable(False, False)
-
+    
     # Variables
     ser = None
     greyscale = BooleanVar()
     port_list = available_ports()
     selected_port = StringVar(root)
     selected_port.set(port_list[0])
-    connect(selected_port.get()) 
-    
+    ser = connect(selected_port.get()) 
+     
     # Widgets
     port_menu   = new_menu(root, MARGIN_L-3, MARGIN_T-1, selected_port, port_list, update_ports)
     b_import    = new_button(root, MARGIN_L, 60, 'Import image', import_image)
-    b_push      = new_button(root, MARGIN_L, 110, 'Push image', push_image)
+    b_push      = new_button(root, MARGIN_L, 110, 'Push image', lambda: push_image(ser))
     gs_cbutton  = new_checkbutton(root, MARGIN_L, 160, 'Greyscale', greyscale)
     image       = new_image(root, 70, 220)
     text        = new_textbox(root, 170, MARGIN_T)
-
+    
     # Main loop
     root.mainloop()
