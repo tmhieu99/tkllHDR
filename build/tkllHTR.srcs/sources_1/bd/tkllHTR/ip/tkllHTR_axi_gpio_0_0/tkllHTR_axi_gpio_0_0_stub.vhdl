@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Sun Jun 16 23:07:39 2019
+-- Date        : Tue Jun 25 15:08:20 2019
 -- Host        : DESKTOP-PRSE4HQ running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build/tkllHTR.srcs/sources_1/bd/tkllHTR/ip/tkllHTR_axi_gpio_0_0/tkllHTR_axi_gpio_0_0_stub.vhdl
+--               c:/Users/dangn/workspace/tkllHTR.srcs/sources_1/bd/tkllHTR/ip/tkllHTR_axi_gpio_0_0/tkllHTR_axi_gpio_0_0_stub.vhdl
 -- Design      : tkllHTR_axi_gpio_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg484-1

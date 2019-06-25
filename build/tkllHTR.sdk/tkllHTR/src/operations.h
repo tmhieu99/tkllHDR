@@ -9,6 +9,7 @@
 #define SRC_OPERATIONS_H_
 
 #include "xil_printf.h"
+#include <math.h>
 
 #define LEN(a) (sizeof(a)/sizeof(a[0]))
 

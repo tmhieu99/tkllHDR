@@ -69,15 +69,15 @@ set rc [catch {
   set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build/tkllHTR.cache/wt [current_project]
-  set_property parent.project_path C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build/tkllHTR.xpr [current_project]
-  set_property ip_output_repo C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build/tkllHTR.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/dangn/workspace/tkllHTR.cache/wt [current_project]
+  set_property parent.project_path C:/Users/dangn/workspace/tkllHTR.xpr [current_project]
+  set_property ip_output_repo C:/Users/dangn/workspace/tkllHTR.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build/tkllHTR.runs/synth_1/tkllHTR_wrapper.dcp
+  add_files -quiet C:/Users/dangn/workspace/tkllHTR.runs/synth_1/tkllHTR_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build/tkllHTR.srcs/sources_1/bd/tkllHTR/tkllHTR.bd
+  add_files C:/Users/dangn/workspace/tkllHTR.srcs/sources_1/bd/tkllHTR/tkllHTR.bd
   set_param project.isImplRun false
   set_param project.isImplRun true
   link_design -top tkllHTR_wrapper -part xc7z020clg484-1

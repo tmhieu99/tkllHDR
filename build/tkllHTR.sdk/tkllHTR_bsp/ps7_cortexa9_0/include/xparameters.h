@@ -31,10 +31,31 @@
  
  
 /******************************************************************/
+/* Definitions for driver CANPS */
+#define XPAR_XCANPS_NUM_INSTANCES 1
+
+/* Definitions for peripheral PS7_CAN_0 */
+#define XPAR_PS7_CAN_0_DEVICE_ID 0
+#define XPAR_PS7_CAN_0_BASEADDR 0xE0008000
+#define XPAR_PS7_CAN_0_HIGHADDR 0xE0008FFF
+#define XPAR_PS7_CAN_0_CAN_CLK_FREQ_HZ 23809523
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral PS7_CAN_0 */
+#define XPAR_XCANPS_0_DEVICE_ID XPAR_PS7_CAN_0_DEVICE_ID
+#define XPAR_XCANPS_0_BASEADDR 0xE0008000
+#define XPAR_XCANPS_0_HIGHADDR 0xE0008FFF
+#define XPAR_XCANPS_0_CAN_CLK_FREQ_HZ 23809523
+
+
+/******************************************************************/
+
 
 /* Definitions for peripheral PS7_DDR_0 */
 #define XPAR_PS7_DDR_0_S_AXI_BASEADDR 0x00100000
-#define XPAR_PS7_DDR_0_S_AXI_HIGHADDR 0x1FFFFFFF
+#define XPAR_PS7_DDR_0_S_AXI_HIGHADDR 0x3FFFFFFF
 
 
 /******************************************************************/
@@ -95,7 +116,7 @@
 #define XPAR_PS7_ETHERNET_0_DEVICE_ID 0
 #define XPAR_PS7_ETHERNET_0_BASEADDR 0xE000B000
 #define XPAR_PS7_ETHERNET_0_HIGHADDR 0xE000BFFF
-#define XPAR_PS7_ETHERNET_0_ENET_CLK_FREQ_HZ 125000000
+#define XPAR_PS7_ETHERNET_0_ENET_CLK_FREQ_HZ 25000000
 #define XPAR_PS7_ETHERNET_0_ENET_SLCR_1000MBPS_DIV0 8
 #define XPAR_PS7_ETHERNET_0_ENET_SLCR_1000MBPS_DIV1 1
 #define XPAR_PS7_ETHERNET_0_ENET_SLCR_100MBPS_DIV0 8
@@ -113,7 +134,7 @@
 #define XPAR_XEMACPS_0_DEVICE_ID XPAR_PS7_ETHERNET_0_DEVICE_ID
 #define XPAR_XEMACPS_0_BASEADDR 0xE000B000
 #define XPAR_XEMACPS_0_HIGHADDR 0xE000BFFF
-#define XPAR_XEMACPS_0_ENET_CLK_FREQ_HZ 125000000
+#define XPAR_XEMACPS_0_ENET_CLK_FREQ_HZ 25000000
 #define XPAR_XEMACPS_0_ENET_SLCR_1000Mbps_DIV0 8
 #define XPAR_XEMACPS_0_ENET_SLCR_1000Mbps_DIV1 1
 #define XPAR_XEMACPS_0_ENET_SLCR_100Mbps_DIV0 8
@@ -220,59 +241,6 @@
 
 /******************************************************************/
 
-/* Definitions for driver GPIO */
-#define XPAR_XGPIO_NUM_INSTANCES 3
-
-/* Definitions for peripheral AXI_GPIO_0 */
-#define XPAR_AXI_GPIO_0_BASEADDR 0x41200000
-#define XPAR_AXI_GPIO_0_HIGHADDR 0x4120FFFF
-#define XPAR_AXI_GPIO_0_DEVICE_ID 0
-#define XPAR_AXI_GPIO_0_INTERRUPT_PRESENT 0
-#define XPAR_AXI_GPIO_0_IS_DUAL 0
-
-
-/* Definitions for peripheral AXI_GPIO_1 */
-#define XPAR_AXI_GPIO_1_BASEADDR 0x41210000
-#define XPAR_AXI_GPIO_1_HIGHADDR 0x4121FFFF
-#define XPAR_AXI_GPIO_1_DEVICE_ID 1
-#define XPAR_AXI_GPIO_1_INTERRUPT_PRESENT 0
-#define XPAR_AXI_GPIO_1_IS_DUAL 0
-
-
-/* Definitions for peripheral AXI_GPIO_2 */
-#define XPAR_AXI_GPIO_2_BASEADDR 0x41220000
-#define XPAR_AXI_GPIO_2_HIGHADDR 0x4122FFFF
-#define XPAR_AXI_GPIO_2_DEVICE_ID 2
-#define XPAR_AXI_GPIO_2_INTERRUPT_PRESENT 0
-#define XPAR_AXI_GPIO_2_IS_DUAL 0
-
-
-/******************************************************************/
-
-/* Canonical definitions for peripheral AXI_GPIO_0 */
-#define XPAR_GPIO_0_BASEADDR 0x41200000
-#define XPAR_GPIO_0_HIGHADDR 0x4120FFFF
-#define XPAR_GPIO_0_DEVICE_ID XPAR_AXI_GPIO_0_DEVICE_ID
-#define XPAR_GPIO_0_INTERRUPT_PRESENT 0
-#define XPAR_GPIO_0_IS_DUAL 0
-
-/* Canonical definitions for peripheral AXI_GPIO_1 */
-#define XPAR_GPIO_1_BASEADDR 0x41210000
-#define XPAR_GPIO_1_HIGHADDR 0x4121FFFF
-#define XPAR_GPIO_1_DEVICE_ID XPAR_AXI_GPIO_1_DEVICE_ID
-#define XPAR_GPIO_1_INTERRUPT_PRESENT 0
-#define XPAR_GPIO_1_IS_DUAL 0
-
-/* Canonical definitions for peripheral AXI_GPIO_2 */
-#define XPAR_GPIO_2_BASEADDR 0x41220000
-#define XPAR_GPIO_2_HIGHADDR 0x4122FFFF
-#define XPAR_GPIO_2_DEVICE_ID XPAR_AXI_GPIO_2_DEVICE_ID
-#define XPAR_GPIO_2_INTERRUPT_PRESENT 0
-#define XPAR_GPIO_2_IS_DUAL 0
-
-
-/******************************************************************/
-
 /* Definitions for driver GPIOPS */
 #define XPAR_XGPIOPS_NUM_INSTANCES 1
 
@@ -288,6 +256,27 @@
 #define XPAR_XGPIOPS_0_DEVICE_ID XPAR_PS7_GPIO_0_DEVICE_ID
 #define XPAR_XGPIOPS_0_BASEADDR 0xE000A000
 #define XPAR_XGPIOPS_0_HIGHADDR 0xE000AFFF
+
+
+/******************************************************************/
+
+/* Definitions for driver IICPS */
+#define XPAR_XIICPS_NUM_INSTANCES 1
+
+/* Definitions for peripheral PS7_I2C_0 */
+#define XPAR_PS7_I2C_0_DEVICE_ID 0
+#define XPAR_PS7_I2C_0_BASEADDR 0xE0004000
+#define XPAR_PS7_I2C_0_HIGHADDR 0xE0004FFF
+#define XPAR_PS7_I2C_0_I2C_CLK_FREQ_HZ 111111115
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral PS7_I2C_0 */
+#define XPAR_XIICPS_0_DEVICE_ID XPAR_PS7_I2C_0_DEVICE_ID
+#define XPAR_XIICPS_0_BASEADDR 0xE0004000
+#define XPAR_XIICPS_0_HIGHADDR 0xE0004FFF
+#define XPAR_XIICPS_0_I2C_CLK_FREQ_HZ 111111115
 
 
 /******************************************************************/

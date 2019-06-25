@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<section name="Workbench">
-	<item value="false" key="tkllHTR_wrapper_hw_platform_0-partial_bit"/>
-	<item value="Auto Detect" key="tkllHTR_wrapper_hw_platform_0-device"/>
-	<item value="tkllHTR_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
-	<item value="" key="tkllHTR_wrapper_hw_platform_0-bmmFile"/>
-	<item value="tkllHTR_wrapper.bit" key="tkllHTR_wrapper_hw_platform_0-bitFile"/>
-	<item value="Local" key="tkllHTR_wrapper_hw_platform_0-target"/>
-</section>

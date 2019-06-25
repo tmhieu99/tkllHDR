@@ -2,11 +2,11 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Jun 16 23:07:42 2019
-# Process ID: 1224
-# Current directory: C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build/tkllHTR.runs/synth_1
+# Start of session at: Tue Jun 25 15:09:55 2019
+# Process ID: 3496
+# Current directory: C:/Users/dangn/workspace/tkllHTR.runs/synth_1
 # Command line: vivado.exe -log tkllHTR_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tkllHTR_wrapper.tcl
-# Log file: C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build/tkllHTR.runs/synth_1/tkllHTR_wrapper.vds
-# Journal file: C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build/tkllHTR.runs/synth_1\vivado.jou
+# Log file: C:/Users/dangn/workspace/tkllHTR.runs/synth_1/tkllHTR_wrapper.vds
+# Journal file: C:/Users/dangn/workspace/tkllHTR.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source tkllHTR_wrapper.tcl -notrace

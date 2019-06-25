@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Sun Jun 16 23:10:22 2019
+| Date             : Tue Jun 25 15:11:46 2019
 | Host             : DESKTOP-PRSE4HQ running 64-bit major release  (build 9200)
 | Command          : report_power -file tkllHTR_wrapper_power_routed.rpt -pb tkllHTR_wrapper_power_summary_routed.pb -rpx tkllHTR_wrapper_power_routed.rpx
 | Design           : tkllHTR_wrapper
@@ -53,13 +53,13 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.005 |        3 |       --- |             --- |
-| Slice Logic             |     0.001 |     2027 |       --- |             --- |
-|   LUT as Logic          |     0.001 |      613 |     53200 |            1.15 |
-|   Register              |    <0.001 |      937 |    106400 |            0.88 |
+| Slice Logic             |     0.001 |     1896 |       --- |             --- |
+|   LUT as Logic          |    <0.001 |      553 |     53200 |            1.04 |
+|   Register              |    <0.001 |      894 |    106400 |            0.84 |
 |   CARRY4                |    <0.001 |       18 |     13300 |            0.14 |
 |   LUT as Shift Register |    <0.001 |       62 |     17400 |            0.36 |
-|   Others                |     0.000 |      218 |       --- |             --- |
-| Signals                 |     0.002 |     1500 |       --- |             --- |
+|   Others                |     0.000 |      211 |       --- |             --- |
+| Signals                 |     0.002 |     1419 |       --- |             --- |
 | I/O                     |    <0.001 |       21 |       200 |           10.50 |
 | PS7                     |     1.529 |        1 |       --- |             --- |
 | Static Power            |     0.144 |          |           |                 |
@@ -153,9 +153,8 @@ Table of Contents
 |   tkllHTR_i              |     1.537 |
 |     processing_system7_0 |     1.530 |
 |       inst               |     1.530 |
-|     ps7_0_axi_periph     |     0.005 |
-|       s00_couplers       |     0.004 |
-|       xbar               |     0.001 |
+|     ps7_0_axi_periph     |     0.006 |
+|       s00_couplers       |     0.005 |
 +--------------------------+-----------+
 
 

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build/tkllHTR.runs/tkllHTR_processing_system7_0_0_synth_1'
+HD_PWD='C:/Users/dangn/workspace/tkllHTR.runs/tkllHTR_processing_system7_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
