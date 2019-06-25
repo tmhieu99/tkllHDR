@@ -98,7 +98,7 @@ def to_c2(file_out = "params_explicit", num_layers = 4):
                 a = list(csv.reader(f))
                 for i in range(len(a)):
                     for j in range(len(a[0])):
-                        fo.write("\t" + ("w" if t < 2 else "b") + str(t % 2) + ("[%3d,%3d] = " % (i, j)))
+                        fo.write("\t" + ("w" if t < 2 else "b") + str(t % 2) + ("[%3d][%3d] = " % (i, j)))
                         a[i][j] = a[i][j].lstrip() 
                         fo.write((" "*(a[i][j][0] != '-')) + a[i][j] + ';\\\n')
     
