@@ -29,23 +29,25 @@ except:
 # Print weights to .csv files
 def print_weights(model):
     a = model.get_weights()
-    for i in range(len(a)):
-        File = open(["bias", "weight"][i % 2 == 0] + str(i//2) + ".csv", "w")
-        for j in range(len(a[i])):
-            try:
-                for k in range(len(a[i][j])):
-                    if k != 0: File.write(", ")
-                    File.write("{0:0.16f}".format(a[i][j][k]))
-                File.write("\n")
-            except:
-                if j != 0: File.write(", ")
-                File.write("{0:0.16f}".format(a[i][j]))
-        File.close()
+    for t in range(6, 18, 2):
+        for i in range(len(a)):
+            File = open(["bias", "weight"][i % 2 == 0] + str(i//2) + "_" + str(t) + ".csv", "w")
+            for j in range(len(a[i])):
+                try:
+                    for k in range(len(a[i][j])):
+                        if k != 0: File.write(", ")
+                        File.write(("{0:0." + str(t) + "f}").format(a[i][j][k]))
+                    File.write("\n")
+                except:
+                    if j != 0: File.write(", ")
+                    File.write(("{0:0." + str(t) + "f}").format(a[i][j]))
+            File.close()
 
 # Convert to c code to import weights into Zedboard
-def to_c(file_out = "params.h", num_layers = 4):
-    fo = open(file_out, "w")
-    fo.write(
+def to_c(file_out = "params", num_layers = 4):
+    for k in range(6, 18, 2):
+        fo = open(file_out + "_" + str(k) + ".h", "w")
+        fo.write(
 '''/*
  * params.h
  *
@@ -57,23 +59,55 @@ def to_c(file_out = "params.h", num_layers = 4):
 #define SRC_PARAMS_H_
 
 ''')
-    for t in range(num_layers):
-        fo.write("#define " + ("WEIGHT" if t < 2 else "BIAS") + "_" + str(t % 2) + " \\\n")
-        with open(("weight" if t < 2 else "bias") + str(t % 2) + ".csv") as f:
-            a = list(csv.reader(f))
-            for i in range(len(a)):
-                fo.write("/*{:>3}*/\t".format(i) + ["{"," "][i>0] + "{")
-                for j in range(len(a[0])):
-                    if j != 0: fo.write(",")
-                    a[i][j] = a[i][j].lstrip() 
-                    fo.write((" "*(a[i][j][0] != '-')) + a[i][j])
-                fo.write("}" + (",\\\n" if i != len(a)-1 else "}\n"))
-        if t != num_layers - 1: fo.write("\n"*3)
-    fo.write(
+        for t in range(num_layers):
+            fo.write("#define " + ("WEIGHT" if t < 2 else "BIAS") + "_" + str(t % 2) + " \\\n")
+            with open(("weight" if t < 2 else "bias") + str(t % 2) + "_" + str(k) + ".csv") as f:
+                a = list(csv.reader(f))
+                for i in range(len(a)):
+                    fo.write("/*{:>3}*/\t".format(i) + ["{"," "][i>0] + "{")
+                    for j in range(len(a[0])):
+                        if j != 0: fo.write(",")
+                        a[i][j] = a[i][j].lstrip() 
+                        fo.write((" "*(a[i][j][0] != '-')) + a[i][j])
+                    fo.write("}" + (",\\\n" if i != len(a)-1 else "}\n"))
+            if t != num_layers - 1: fo.write("\n"*3)
+        fo.write(
 '''
 #endif /* SRC_PARAMS_H_ */
 ''')
-    fo.close()
+        fo.close()
+
+def to_c2(file_out = "params_explicit", num_layers = 4):
+    for k in range(6, 18, 2):
+        fo = open(file_out + "_" + str(k) + ".h", "w")
+        fo.write(
+'''/*
+ * params.h
+ *
+ *  Created on: Jun 23, 2019
+ *      Author: dangn
+ */
+
+#ifndef SRC_PARAMS_H_
+#define SRC_PARAMS_H_
+
+''')
+        for t in range(num_layers):
+            fo.write("#define " + ("WEIGHT" if t < 2 else "BIAS") + "_" + str(t % 2) + " \\\n")
+            with open(("weight" if t < 2 else "bias") + str(t % 2) + "_" + str(k) + ".csv") as f:
+                a = list(csv.reader(f))
+                for i in range(len(a)):
+                    for j in range(len(a[0])):
+                        fo.write("\t" + ("w" if t < 2 else "b") + str(t % 2) + ("[%3d,%3d] = " % (i, j)))
+                        a[i][j] = a[i][j].lstrip() 
+                        fo.write((" "*(a[i][j][0] != '-')) + a[i][j] + ';\\\n')
+    
+            if t != num_layers - 1: fo.write("\n"*3)
+        fo.write(
+'''
+#endif /* SRC_PARAMS_H_ */
+''')
+        fo.close()
 
 # Define MLP model
 def MLP(num_layers = 1, num_units = 1):
