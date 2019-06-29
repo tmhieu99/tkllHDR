@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jun 25 15:31:03 2019
+# Process ID: 3796
+# Current directory: C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5780 C:\Users\dangn\Dropbox\it\CodingSpace\tkllHTR\build\tkllHTR.xpr
+# Log file: C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build/vivado.log
+# Journal file: C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build/tkllHTR.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build/tkllHTR.sdk -hwspec C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build/tkllHTR.sdk/tkllHTR_wrapper.hdf

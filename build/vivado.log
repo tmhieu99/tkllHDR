@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jun 25 15:31:03 2019
+# Process ID: 3796
+# Current directory: C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5780 C:\Users\dangn\Dropbox\it\CodingSpace\tkllHTR\build\tkllHTR.xpr
+# Log file: C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build/vivado.log
+# Journal file: C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build/tkllHTR.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/dangn/workspace' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:16 . Memory (MB): peak = 704.102 ; gain = 154.160
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build/tkllHTR.sdk -hwspec C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build/tkllHTR.sdk/tkllHTR_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build/tkllHTR.sdk -hwspec C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build/tkllHTR.sdk/tkllHTR_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 25 15:35:16 2019...
