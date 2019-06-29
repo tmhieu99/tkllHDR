@@ -42,40 +42,26 @@ def image_processing(res):
 
     # Noise reduction
     res = cv2.fastNlMeansDenoising(res, res, 3, 7, 21)
-
-    show_result(res, res)
     
     # Apply adaptive thresholding
     res = cv2.adaptiveThreshold(res, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
     
-    show_result(res, res)
-
     # Inverse image
     res = cv2.bitwise_not(res, res)
-
-    show_result(res, res)
 
     # Remove white blobs
     kernel = np.ones((2, 2), np.uint8)
     res = cv2.morphologyEx(res, cv2.MORPH_OPEN, kernel)
 
-    show_result(res, res)
-
     # Crop image
     res = crop_image(res)
     
-    show_result(res, res)
-
     # Dilate image
     kernel = np.ones((5, 5), np.uint8)
     res = cv2.dilate(res,kernel,iterations = 1)
 
-    show_result(res, res)
-
     # Scale image
     res = cv2.resize(res, (28, 28), interpolation = cv2.INTER_AREA)
-
-    show_result(res, res)
     
     # Final result
     return res
