@@ -1,6 +1,9 @@
+INPUT_SIZE = 14
+
 import csv
 try:
     import numpy as np
+    import cv2
     import keras 
     from keras.datasets import mnist
     from keras.layers import Dense, Flatten
@@ -8,9 +11,14 @@ try:
     from keras.utils.vis_utils import plot_model
 
     # Load MNIST data
-    (x_train, y_train), (x_test, y_test) = mnist.load_data()
-    num_classes = 10
+    (x1, y_train), (x2, y_test) = mnist.load_data()
     
+    # Downscale image 
+    x_train = np.array([cv2.resize(x1[i], (INPUT_SIZE, INPUT_SIZE), interpolation = cv2.INTER_AREA) for i in range(len(x1))])
+    x_test = np.array([cv2.resize(x2[i], (INPUT_SIZE, INPUT_SIZE), interpolation = cv2.INTER_AREA) for i in range(len(x2))])
+    
+    num_classes = 10
+     
     # Normalize inputs from 0-255 to 0-1
     x_train = x_train / 255
     x_test = x_test / 255
@@ -18,10 +26,10 @@ try:
     # One hot encode outputs
     y_train = keras.utils.to_categorical(y_train, num_classes)
     y_test = keras.utils.to_categorical(y_test, num_classes)
-    
+     
     # Flatten
-    x_train = x_train.reshape(x_train.shape[0], 28*28).astype('float32')
-    x_test = x_test.reshape(x_test.shape[0], 28*28).astype('float32')
+    x_train = x_train.reshape(x_train.shape[0], INPUT_SIZE*INPUT_SIZE).astype('float32')
+    x_test = x_test.reshape(x_test.shape[0], INPUT_SIZE*INPUT_SIZE).astype('float32')
     
 except:
     print("Error: Initialization for MLP failed.")
@@ -113,7 +121,7 @@ def to_c2(file_out = "params_explicit", num_layers = 4):
 def MLP(num_layers = 1, num_units = 1):
     # Create layers
     model = Sequential()
-    model.add(Dense(num_units, activation='relu', input_shape=(784,)))
+    model.add(Dense(num_units, activation='relu', input_shape=(INPUT_SIZE*INPUT_SIZE,)))
     model.add(Dense(num_classes, activation='softmax'))
     # Compile model
     '''

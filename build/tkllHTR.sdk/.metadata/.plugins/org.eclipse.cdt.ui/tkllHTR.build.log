@@ -1,4 +1,4 @@
-15:19:23 **** Auto Build of configuration Debug for project tkllHTR ****
+15:33:07 **** Auto Build of configuration Debug for project tkllHTR ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -19,5 +19,5 @@ arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
 'Finished building: tkllHTR.elf.size'
 ' '
 
-15:19:47 Build Finished (took 23s.383ms)
+15:33:40 Build Finished (took 32s.630ms)
 
