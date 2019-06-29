@@ -61,7 +61,7 @@ def image_processing(res):
     res = cv2.dilate(res,kernel,iterations = 1)
 
     # Scale image
-    res = cv2.resize(res, (28, 28), interpolation = cv2.INTER_AREA)
+    res = cv2.resize(res, (14, 14), interpolation = cv2.INTER_AREA)
     
     # Final result
     return res
