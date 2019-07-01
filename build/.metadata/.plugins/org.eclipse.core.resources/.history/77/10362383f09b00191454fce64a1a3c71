@@ -13,7 +13,7 @@
 #include "mlp.h"
 #include "operations.h"
 
-#define INPUT_SIZE			784
+#define INPUT_SIZE			196
 #define BUFFER_SIZE 		(INPUT_SIZE*3 + INPUT_SIZE)
 #define IDLE_STATE 			1
 #define EXECUTION_STATE 	2
@@ -13315,28 +13315,20 @@ int main(){
 	/*----------------- FOR DEBUGGING PURPOSE -----------------*/
 
 	int i, j;
-	for ( i = 0 ; i < 196 ; ++i)
-			for ( j = 0 ; j < 64 ; ++j)
-				w0[i][j] = 0.05679756;
+	for ( i = 0 ; i < LEN(w0) ; ++i)
+			for ( j = 0 ; j < LEN(w0[0]) ; ++j)
+				w0[i][j] = 0;
 
-	for ( i = 0 ; i < 196 ; ++i)
-			for ( j = 0 ; j < 64 ; ++j)
-				w0[i][j] = 0.05629756;
-
-	for ( i = 0 ; i < 196 ; ++i)
-			for ( j = 0 ; j < 64 ; ++j)
-				w0[i][j] = 0.05689756;
-
-	for ( i = 0 ; i < 1 ; ++i)
-			for ( j = 0 ; j < 64 ; ++j)
-				b0[i][j] = 0;
-
-	for ( i = 0 ; i < 64 ; ++i)
-			for ( j = 0 ; j < 10 ; ++j)
+	for ( i = 0 ; i < LEN(w1) ; ++i)
+			for ( j = 0 ; j < LEN(w1[0]) ; ++j)
 				w1[i][j] = 0;
 
-	for ( i = 0 ; i < 1 ; ++i)
-			for ( j = 0 ; j < 10 ; ++j)
+	for ( i = 0 ; i < LEN(b0) ; ++i)
+			for ( j = 0 ; j < LEN(b0[0]) ; ++j)
+				b0[i][j] = 0;
+
+	for ( i = 0 ; i < LEN(b1) ; ++i)
+			for ( j = 0 ; j < LEN(b1[0]) ; ++j)
 				b1[i][j] = 0;
 
 	while (1) {

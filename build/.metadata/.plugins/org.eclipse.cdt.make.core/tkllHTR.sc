@@ -858,6 +858,7 @@
 </instance>
 <instance id="xilinx.gnu.armv7.exe.debug.977911748;xilinx.gnu.armv7.exe.debug.977911748.;xilinx.gnu.armv7.c.toolchain.compiler.debug.1742951610;xilinx.gnu.armv7.c.compiler.input.1307625214">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="#undef __ARM_FP" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_CRYPTO" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_UNALIGNED" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_CMSE" removed="true"/>
@@ -865,6 +866,7 @@
 <includePath path="#undef __ARM_FP16_FORMAT_ALTERNATIVE" removed="true"/>
 <includePath path="#undef __ARM_FP16_ARGS" removed="true"/>
 <includePath path="c:\xilinx\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/7.3.1/include"/>
+<includePath path="#undef __ARM_FP16_FORMAT_IEEE" removed="true"/>
 <includePath path="#undef __THUMBEL__" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_QRDMX" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_CLZ" removed="true"/>
