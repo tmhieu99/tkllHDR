@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>ZC702_hw_platform_Traces</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.linuxtools.tmf.project.nature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Traces/Run_Jul-01_16-13/PS_Trace_Jul-01_16-13/PS_Trace_Jul-01_16-13_</name>
+			<type>1</type>
+			<location>C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build/ZC702_hw_platform_Traces/Traces/.bookmarks</location>
+		</link>
+		<link>
+			<name>Traces/Run_Jul-01_16-20/PS_Trace_Jul-01_16-20/PS_Trace_Jul-01_16-20_</name>
+			<type>1</type>
+			<location>C:/Users/dangn/Dropbox/it/CodingSpace/tkllHTR/build/ZC702_hw_platform_Traces/Traces/.bookmarks</location>
+		</link>
+	</linkedResources>
+</projectDescription>

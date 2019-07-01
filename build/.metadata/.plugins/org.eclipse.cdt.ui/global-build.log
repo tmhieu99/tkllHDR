@@ -1,0 +1,2153 @@
+13:39:59 **** Build of project tkllHTR_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/canps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/canps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/canps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/canps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling canps"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+13:40:44 **** Auto Build of project tkllHTR_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/canps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/canps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/canps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/canps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling canps"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+13:41:22 **** Clean-only build of configuration Debug for project tkllHTR ****
+make clean 
+rm -rf  ./src/main.o  ./src/main.d  tkllHTR.elf.size  tkllHTR.elf
+' '
+13:41:22 **** Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33572	   2192	  22632	  58396	   e41c	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+13:41:42 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33572	   2192	  22632	  58396	   e41c	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+13:42:15 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33292	   2192	  22632	  58116	   e304	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+13:42:22 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33508	   2192	  22632	  58332	   e3dc	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+13:42:45 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  88268	   2192	  22632	 113092	  1b9c4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+13:43:30 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  88268	   2192	  22632	 113092	  1b9c4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+13:52:31 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  88268	   2192	  22632	 113092	  1b9c4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+13:55:18 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  88268	   2192	  22632	 113092	  1b9c4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+14:02:13 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/mlp.h:14:0,
+                 from ../src/main.c:13:
+../src/main.c: In function 'main':
+../src/params.h:12:2: error: invalid initializer
+  w0[  0][  0] =  0.03952998;\
+  ^
+../src/main.c:64:48: note: in expansion of macro 'WEIGHT_0'
+     float w0[UNIT_LAYER_INPUT][UNIT_LAYER_1] = WEIGHT_0;
+                                                ^~~~~~~~
+../src/params.h:13204:2: error: invalid initializer
+  b0[  0][  0] = -0.12745510;\
+  ^
+../src/main.c:65:38: note: in expansion of macro 'BIAS_0'
+     float b0[1][UNIT_LAYER_1]      = BIAS_0;
+                                      ^~~~~~
+../src/params.h:12560:2: error: invalid initializer
+  w1[  0][  0] = -0.49232543;\
+  ^
+../src/main.c:66:50: note: in expansion of macro 'WEIGHT_1'
+     float w1[UNIT_LAYER_1][UNIT_LAYER_OUTPUT]  = WEIGHT_1;
+                                                  ^~~~~~~~
+../src/params.h:13272:2: error: invalid initializer
+  b1[  0][  0] = -0.15581928;\
+  ^
+../src/main.c:67:42: note: in expansion of macro 'BIAS_1'
+     float b1[1][UNIT_LAYER_OUTPUT]     = BIAS_1;
+                                          ^~~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+14:03:43 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 530276	   2192	  22632	 555100	  8785c	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+14:03:56 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 530276	   2192	  22632	 555100	  8785c	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+14:05:01 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 530276	   2192	  22632	 555100	  8785c	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+14:08:17 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 530276	   2192	  22632	 555100	  8785c	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+14:09:41 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 530276	   2192	  22632	 555100	  8785c	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+14:10:48 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 530228	   2192	  22632	 555052	  8782c	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+14:11:07 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 530228	   2192	  22632	 555052	  8782c	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+14:14:38 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 530228	   2192	  22632	 555052	  8782c	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+14:15:49 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 530252	   2192	  22632	 555076	  87844	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+14:16:07 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 530252	   2192	  22632	 555076	  87844	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+14:16:47 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33484	   2192	  22632	  58308	   e3c4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+14:39:26 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 530252	   2192	  22632	 555076	  87844	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+14:43:55 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 530252	   2192	  22632	 555076	  87844	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+14:48:24 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 530252	   2192	  22632	 555076	  87844	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+14:49:51 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 530252	   2192	  22632	 555076	  87844	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+14:50:16 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 530252	   2192	  22632	 555076	  87844	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+14:51:17 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 530252	   2192	  22632	 555076	  87844	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+14:51:42 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 530252	   2192	  22632	 555076	  87844	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+11:49:50 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:69:1: warning: multi-line comment [-Wcomment]
+ //    w0[  0][  0] =  0.03952998;\
+ ^
+../src/main.c:12616:1: warning: multi-line comment [-Wcomment]
+ //    w1[  0][  0] = -0.49232543;\
+ ^
+../src/main.c:13258:1: warning: multi-line comment [-Wcomment]
+ //    b0[  0][  0] = -0.12745510;\
+ ^
+../src/main.c:13324:1: warning: multi-line comment [-Wcomment]
+ //    b1[  0][  0] = -0.15581928;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33484	   2192	  22632	  58308	   e3c4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+11:50:43 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 530252	   2192	  22632	 555076	  87844	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+12:25:39 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:29:16: error: expected expression before '{' token
+     input[0] = {0, 0, 2, 0, 0, 0, 0, 0, 0, 4, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 26, 5, 0, 0, 3, 1, 0, 2, 0, 3, 1, 28, 135, 164, 130, 8, 3, 4, 0, 0, 5, 2, 0, 25, 151, 152, 43, 0, 2, 2, 0, 3, 0, 0, 0, 0, 13, 195, 40, 0, 2, 1, 0, 0, 2, 0, 0, 3, 1, 0, 0, 142, 0, 2, 0, 1, 0, 2, 0, 2, 1, 0, 0, 0, 1, 153, 1, 0, 1, 0, 2, 0, 2, 0, 1, 2, 0, 1, 1, 97, 155, 137, 60, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 16, 17, 110, 175, 1, 2, 0, 0, 0, 0, 3, 0, 0, 0, 3, 0, 9, 177, 6, 0, 1, 0, 1, 0, 0, 1, 0, 58, 2, 14, 175, 64, 1, 0, 0, 0, 0, 3, 2, 0, 0, 98, 149, 177, 42, 0, 3, 0, 0, 5, 0, 0, 0, 1, 1, 5, 27, 0, 2, 2, 1, 0, 0, 0, 2, 0, 5, 0, 1, 0, 0, 2, 0, 0, 0, 0, 1, 0, 1};
+                ^
+../src/main.c:27:11: warning: unused variable 'token' [-Wunused-variable]
+     char* token;
+           ^~~~~
+../src/main.c:23:7: warning: unused variable 'buffer' [-Wunused-variable]
+  char buffer[BUFFER_SIZE];
+       ^~~~~~
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+12:26:23 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:27:11: warning: unused variable 'token' [-Wunused-variable]
+     char* token;
+           ^~~~~
+../src/main.c:23:7: warning: unused variable 'buffer' [-Wunused-variable]
+  char buffer[BUFFER_SIZE];
+       ^~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 524548	   1152	  22568	 548268	  85dac	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+12:28:17 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 519876	   1152	  22568	 543596	  84b6c	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+12:41:56 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 530252	   2192	  22632	 555076	  87844	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+12:42:10 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:42:21 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:42:44 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:43:17 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:43:39 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:45:23 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:45:35 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:46:51 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:48:10 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:00:29 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:00:43 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:01:39 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 530188	   2192	  22632	 555012	  87804	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+13:01:50 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:01:59 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:03:37 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 530124	   2192	  22632	 554948	  877c4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+13:03:46 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:03:55 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:05:41 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:4972:1: warning: multi-line comment [-Wcomment]
+ // w0[ 77][  5] =  0.19427495;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 239436	   2192	  22632	 264260	  40844	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+13:06:20 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:08:38 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:13:12 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:20:14 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:20:40 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:41:49 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:42:16 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:43:25 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:44:00 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:39:1: warning: multi-line comment [-Wcomment]
+ // w0[  0][  0] =  0.03952998;\
+ ^
+../src/main.c:4972:1: warning: multi-line comment [-Wcomment]
+ //// w0[ 77][  5] =  0.19427495;\
+ ^
+../src/main.c:12586:1: warning: multi-line comment [-Wcomment]
+ // w1[  0][  0] = -0.49232543;\
+ ^
+../src/main.c:13228:1: warning: multi-line comment [-Wcomment]
+ // b0[  0][  0] = -0.12745510;\
+ ^
+../src/main.c:13294:1: warning: multi-line comment [-Wcomment]
+ // b1[  0][  0] = -0.15581928;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33484	   2192	  22632	  58308	   e3c4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+16:44:10 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:44:33 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:45:45 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:53:04 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:39:1: warning: multi-line comment [-Wcomment]
+ // w0[  0][  0] =  0.03952998;\
+ ^
+../src/main.c:4972:1: warning: multi-line comment [-Wcomment]
+ //// w0[ 77][  5] =  0.19427495;\
+ ^
+../src/main.c:12586:1: warning: multi-line comment [-Wcomment]
+ // w1[  0][  0] = -0.49232543;\
+ ^
+../src/main.c:13228:1: warning: multi-line comment [-Wcomment]
+ // b0[  0][  0] = -0.12745510;\
+ ^
+../src/main.c:13294:1: warning: multi-line comment [-Wcomment]
+ // b1[  0][  0] = -0.15581928;\
+ ^
+In file included from ../src/mlp.h:13:0,
+                 from ../src/main.c:13:
+../src/main.c:13342:32: error: 'b' undeclared (first use in this function)
+        for (int j = 0; j < LEN(b) ; j++) {
+                                ^
+../src/operations.h:14:24: note: in definition of macro 'LEN'
+ #define LEN(a) (sizeof(a)/sizeof(a[0]))
+                        ^
+../src/main.c:13342:32: note: each undeclared identifier is reported only once for each function it appears in
+        for (int j = 0; j < LEN(b) ; j++) {
+                                ^
+../src/operations.h:14:24: note: in definition of macro 'LEN'
+ #define LEN(a) (sizeof(a)/sizeof(a[0]))
+                        ^
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+16:53:12 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:39:1: warning: multi-line comment [-Wcomment]
+ // w0[  0][  0] =  0.03952998;\
+ ^
+../src/main.c:4972:1: warning: multi-line comment [-Wcomment]
+ //// w0[ 77][  5] =  0.19427495;\
+ ^
+../src/main.c:12586:1: warning: multi-line comment [-Wcomment]
+ // w1[  0][  0] = -0.49232543;\
+ ^
+../src/main.c:13228:1: warning: multi-line comment [-Wcomment]
+ // b0[  0][  0] = -0.12745510;\
+ ^
+../src/main.c:13294:1: warning: multi-line comment [-Wcomment]
+ // b1[  0][  0] = -0.15581928;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33524	   2192	  22632	  58348	   e3ec	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+16:53:37 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:39:1: warning: multi-line comment [-Wcomment]
+ // w0[  0][  0] =  0.03952998;\
+ ^
+../src/main.c:4972:1: warning: multi-line comment [-Wcomment]
+ //// w0[ 77][  5] =  0.19427495;\
+ ^
+../src/main.c:12586:1: warning: multi-line comment [-Wcomment]
+ // w1[  0][  0] = -0.49232543;\
+ ^
+../src/main.c:13228:1: warning: multi-line comment [-Wcomment]
+ // b0[  0][  0] = -0.12745510;\
+ ^
+../src/main.c:13294:1: warning: multi-line comment [-Wcomment]
+ // b1[  0][  0] = -0.15581928;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33524	   2192	  22632	  58348	   e3ec	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+16:56:29 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:57:32 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:57:59 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:00:58 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:05:03 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:08:25 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:39:1: warning: multi-line comment [-Wcomment]
+ // w0[  0][  0] =  0.03952998;\
+ ^
+../src/main.c:4972:1: warning: multi-line comment [-Wcomment]
+ //// w0[ 77][  5] =  0.19427495;\
+ ^
+../src/main.c:12586:1: warning: multi-line comment [-Wcomment]
+ // w1[  0][  0] = -0.49232543;\
+ ^
+../src/main.c:13228:1: warning: multi-line comment [-Wcomment]
+ // b0[  0][  0] = -0.12745510;\
+ ^
+../src/main.c:13294:1: warning: multi-line comment [-Wcomment]
+ // b1[  0][  0] = -0.15581928;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33524	   2192	  22632	  58348	   e3ec	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+17:08:58 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:39:1: warning: multi-line comment [-Wcomment]
+ // w0[  0][  0] =  0.03952998;\
+ ^
+../src/main.c:4972:1: warning: multi-line comment [-Wcomment]
+ //// w0[ 77][  5] =  0.19427495;\
+ ^
+../src/main.c:12586:1: warning: multi-line comment [-Wcomment]
+ // w1[  0][  0] = -0.49232543;\
+ ^
+../src/main.c:13228:1: warning: multi-line comment [-Wcomment]
+ // b0[  0][  0] = -0.12745510;\
+ ^
+../src/main.c:13294:1: warning: multi-line comment [-Wcomment]
+ // b1[  0][  0] = -0.15581928;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33524	   2192	  22632	  58348	   e3ec	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+17:09:17 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:14:51 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:39:1: warning: multi-line comment [-Wcomment]
+ // w0[  0][  0] =  0.03952998;\
+ ^
+../src/main.c:4972:1: warning: multi-line comment [-Wcomment]
+ //// w0[ 77][  5] =  0.19427495;\
+ ^
+../src/main.c:12586:1: warning: multi-line comment [-Wcomment]
+ // w1[  0][  0] = -0.49232543;\
+ ^
+../src/main.c:13228:1: warning: multi-line comment [-Wcomment]
+ // b0[  0][  0] = -0.12745510;\
+ ^
+../src/main.c:13294:1: warning: multi-line comment [-Wcomment]
+ // b1[  0][  0] = -0.15581928;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33612	   2192	  22632	  58436	   e444	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+17:15:58 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:16:56 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:39:1: warning: multi-line comment [-Wcomment]
+ // w0[  0][  0] =  0.03952998;\
+ ^
+../src/main.c:4972:1: warning: multi-line comment [-Wcomment]
+ //// w0[ 77][  5] =  0.19427495;\
+ ^
+../src/main.c:12586:1: warning: multi-line comment [-Wcomment]
+ // w1[  0][  0] = -0.49232543;\
+ ^
+../src/main.c:13228:1: warning: multi-line comment [-Wcomment]
+ // b0[  0][  0] = -0.12745510;\
+ ^
+../src/main.c:13294:1: warning: multi-line comment [-Wcomment]
+ // b1[  0][  0] = -0.15581928;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33612	   2192	  22632	  58436	   e444	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+17:18:50 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:19:17 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:20:45 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:39:1: warning: multi-line comment [-Wcomment]
+ // w0[  0][  0] =  0.03952998;\
+ ^
+../src/main.c:4972:1: warning: multi-line comment [-Wcomment]
+ //// w0[ 77][  5] =  0.19427495;\
+ ^
+../src/main.c:12586:1: warning: multi-line comment [-Wcomment]
+ // w1[  0][  0] = -0.49232543;\
+ ^
+../src/main.c:13228:1: warning: multi-line comment [-Wcomment]
+ // b0[  0][  0] = -0.12745510;\
+ ^
+../src/main.c:13294:1: warning: multi-line comment [-Wcomment]
+ // b1[  0][  0] = -0.15581928;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76740	   2584	  23328	 102652	  190fc	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+17:20:50 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:24:04 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:39:1: warning: multi-line comment [-Wcomment]
+ // w0[  0][  0] =  0.03952998;\
+ ^
+../src/main.c:4972:1: warning: multi-line comment [-Wcomment]
+ //// w0[ 77][  5] =  0.19427495;\
+ ^
+../src/main.c:12586:1: warning: multi-line comment [-Wcomment]
+ // w1[  0][  0] = -0.49232543;\
+ ^
+../src/main.c:13228:1: warning: multi-line comment [-Wcomment]
+ // b0[  0][  0] = -0.12745510;\
+ ^
+../src/main.c:13294:1: warning: multi-line comment [-Wcomment]
+ // b1[  0][  0] = -0.15581928;\
+ ^
+../src/main.c:13340:6: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+      for (int i = 0; i < LEN(hidden) ; i++)
+      ^~~
+../src/main.c:13346:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+       printf("hidden[i][j] = %f\n", hidden[i][j]);
+       ^~~~~~
+../src/main.c:13346:47: error: 'j' undeclared (first use in this function)
+       printf("hidden[i][j] = %f\n", hidden[i][j]);
+                                               ^
+../src/main.c:13346:47: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+17:24:17 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:39:1: warning: multi-line comment [-Wcomment]
+ // w0[  0][  0] =  0.03952998;\
+ ^
+../src/main.c:4972:1: warning: multi-line comment [-Wcomment]
+ //// w0[ 77][  5] =  0.19427495;\
+ ^
+../src/main.c:12586:1: warning: multi-line comment [-Wcomment]
+ // w1[  0][  0] = -0.49232543;\
+ ^
+../src/main.c:13228:1: warning: multi-line comment [-Wcomment]
+ // b0[  0][  0] = -0.12745510;\
+ ^
+../src/main.c:13294:1: warning: multi-line comment [-Wcomment]
+ // b1[  0][  0] = -0.15581928;\
+ ^
+../src/main.c:13340:6: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+      for (int i = 0; i < LEN(hidden) ; i++)
+      ^~~
+../src/main.c:13346:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+       printf("hidden[i][k] = %f\n", hidden[i][k]);
+       ^~~~~~
+../src/main.c:13346:47: error: 'k' undeclared (first use in this function)
+       printf("hidden[i][k] = %f\n", hidden[i][k]);
+                                               ^
+../src/main.c:13346:47: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:23: src/main.o] Error 1
+17:24:31 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:39:1: warning: multi-line comment [-Wcomment]
+ // w0[  0][  0] =  0.03952998;\
+ ^
+../src/main.c:4972:1: warning: multi-line comment [-Wcomment]
+ //// w0[ 77][  5] =  0.19427495;\
+ ^
+../src/main.c:12586:1: warning: multi-line comment [-Wcomment]
+ // w1[  0][  0] = -0.49232543;\
+ ^
+../src/main.c:13228:1: warning: multi-line comment [-Wcomment]
+ // b0[  0][  0] = -0.12745510;\
+ ^
+../src/main.c:13294:1: warning: multi-line comment [-Wcomment]
+ // b1[  0][  0] = -0.15581928;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76740	   2584	  23328	 102652	  190fc	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+17:24:36 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:39:1: warning: multi-line comment [-Wcomment]
+ // w0[  0][  0] =  0.03952998;\
+ ^
+../src/main.c:4972:1: warning: multi-line comment [-Wcomment]
+ //// w0[ 77][  5] =  0.19427495;\
+ ^
+../src/main.c:12586:1: warning: multi-line comment [-Wcomment]
+ // w1[  0][  0] = -0.49232543;\
+ ^
+../src/main.c:13228:1: warning: multi-line comment [-Wcomment]
+ // b0[  0][  0] = -0.12745510;\
+ ^
+../src/main.c:13294:1: warning: multi-line comment [-Wcomment]
+ // b1[  0][  0] = -0.15581928;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76636	   2584	  23328	 102548	  19094	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+17:24:54 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:39:1: warning: multi-line comment [-Wcomment]
+ // w0[  0][  0] =  0.03952998;\
+ ^
+../src/main.c:4972:1: warning: multi-line comment [-Wcomment]
+ //// w0[ 77][  5] =  0.19427495;\
+ ^
+../src/main.c:12586:1: warning: multi-line comment [-Wcomment]
+ // w1[  0][  0] = -0.49232543;\
+ ^
+../src/main.c:13228:1: warning: multi-line comment [-Wcomment]
+ // b0[  0][  0] = -0.12745510;\
+ ^
+../src/main.c:13294:1: warning: multi-line comment [-Wcomment]
+ // b1[  0][  0] = -0.15581928;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76636	   2584	  23328	 102548	  19094	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+17:25:08 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:26:17 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:39:1: warning: multi-line comment [-Wcomment]
+ // w0[  0][  0] =  0.03952998;\
+ ^
+../src/main.c:4972:1: warning: multi-line comment [-Wcomment]
+ //// w0[ 77][  5] =  0.19427495;\
+ ^
+../src/main.c:12586:1: warning: multi-line comment [-Wcomment]
+ // w1[  0][  0] = -0.49232543;\
+ ^
+../src/main.c:13228:1: warning: multi-line comment [-Wcomment]
+ // b0[  0][  0] = -0.12745510;\
+ ^
+../src/main.c:13294:1: warning: multi-line comment [-Wcomment]
+ // b1[  0][  0] = -0.15581928;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76636	   2584	  23328	 102548	  19094	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+17:26:26 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:4972:1: warning: multi-line comment [-Wcomment]
+ // w0[ 77][  5] =  0.19427495;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 282652	   2584	  23328	 308564	  4b554	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+17:26:33 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:28:05 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:4973:1: warning: multi-line comment [-Wcomment]
+ // w0[ 77][  5] =  0.19427495;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 282668	   2584	  23328	 308580	  4b564	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+17:28:09 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:4973:1: warning: multi-line comment [-Wcomment]
+ // w0[ 77][  5] =  0.19427495;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 282668	   2584	  23328	 308580	  4b564	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+17:29:05 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:4973:1: warning: multi-line comment [-Wcomment]
+ // w0[ 77][  5] =  0.19427495;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 282748	   2584	  23328	 308660	  4b5b4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+17:29:12 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:4973:1: warning: multi-line comment [-Wcomment]
+ // w0[ 77][  5] =  0.19427495;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 282764	   2584	  23328	 308676	  4b5c4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+17:29:19 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:29:41 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:30:13 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:30:32 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:31:47 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:4973:1: warning: multi-line comment [-Wcomment]
+ // w0[ 77][  5] =  0.19427495;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 282932	   2584	  23328	 308844	  4b66c	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+17:32:15 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:4974:1: warning: multi-line comment [-Wcomment]
+ // w0[ 77][  5] =  0.19427495;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 283012	   2584	  23328	 308924	  4b6bc	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+17:32:21 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:33:00 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:4974:1: warning: multi-line comment [-Wcomment]
+ // w0[ 77][  5] =  0.19427495;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 283012	   2584	  23328	 308924	  4b6bc	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+17:33:08 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:33:58 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:34:34 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:4975:1: warning: multi-line comment [-Wcomment]
+ // w0[ 77][  5] =  0.19427495;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 283012	   2584	  23328	 308924	  4b6bc	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+17:34:39 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:4975:1: warning: multi-line comment [-Wcomment]
+ // w0[ 77][  5] =  0.19427495;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 283028	   2584	  23328	 308940	  4b6cc	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+17:34:52 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:35:13 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:36:02 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:36:30 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:38:42 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:4975:1: warning: multi-line comment [-Wcomment]
+ // w0[ 77][  5] =  0.19427495;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 282796	   2584	  23328	 308708	  4b5e4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+17:38:59 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:39:11 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:44:00 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:4976:1: warning: multi-line comment [-Wcomment]
+ // w0[ 77][  5] =  0.19427495;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 282796	   2584	  23328	 308708	  4b5e4	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+17:44:13 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:44:26 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:57:30 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:39:1: warning: multi-line comment [-Wcomment]
+ // w0[  0][  0] =  0.03952998;\
+ ^
+../src/main.c:41:1: warning: multi-line comment [-Wcomment]
+ // w0[  0][  1] =  0.08997943;\
+ ^
+../src/main.c:1437:1: warning: multi-line comment [-Wcomment]
+ // w0[ 21][ 52] =  0.07185894;\
+ ^
+../src/main.c:4965:1: warning: multi-line comment [-Wcomment]
+ // w0[ 76][ 59] =  0.60350108;\
+ ^
+../src/main.c:4976:1: warning: multi-line comment [-Wcomment]
+ //// w0[ 77][  5] =  0.19427495;\
+ ^
+../src/main.c:12591:1: warning: multi-line comment [-Wcomment]
+ // w1[  0][  0] = -0.49232543;\
+ ^
+../src/main.c:12794:1: warning: multi-line comment [-Wcomment]
+ // w1[ 20][  1] =  0.27628189;\
+ ^
+../src/main.c:13235:1: warning: multi-line comment [-Wcomment]
+ // b0[  0][  0] = -0.12745510;\
+ ^
+../src/main.c:13301:1: warning: multi-line comment [-Wcomment]
+ // b1[  0][  0] = -0.15581928;\
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77148	   2584	  23328	 103060	  19294	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+17:57:37 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:58:03 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:58:13 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:02:40 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:02:53 **** Incremental Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.

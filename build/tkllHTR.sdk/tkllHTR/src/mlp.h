@@ -14,7 +14,7 @@
 #include "params.h"
 
 // Number of units in each layer
-#define UNIT_LAYER_INPUT	784
+#define UNIT_LAYER_INPUT	196
 #define UNIT_LAYER_1		64
 #define UNIT_LAYER_OUTPUT	10
 
