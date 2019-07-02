@@ -1,14 +1,12 @@
 /*
  * operations.h
  *
- *  Created on: Jun 16, 2019
+ *  Created on: Jul 2, 2019
  *      Author: dangn
  */
 
 #ifndef SRC_OPERATIONS_H_
 #define SRC_OPERATIONS_H_
-
-#include "xil_printf.h"
 
 #define LEN(a) (sizeof(a)/sizeof(a[0]))
 
