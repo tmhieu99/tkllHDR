@@ -16,7 +16,7 @@ def open_image():
         show_result(img, res)
 
 def crop_image(img):
-    img, contours, hierarchy = cv2.findContours(img, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+    contours, hierarchy = cv2.findContours(img, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
     region = (0, 0, 0, 0)
     max_area = 0
     for cont in contours:
