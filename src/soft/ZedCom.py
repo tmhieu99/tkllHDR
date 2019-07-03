@@ -249,7 +249,7 @@ class App(Frame):
         port_menu       = OptionMenu(self, selected_port, *port_list)
         b_import        = Button(self, text='Import image', command=import_image)
         b_push          = Button(self, text='Push image', command=lambda:push_image(ser))
-        b_evaluation    = Button(self, text='Evaluation')
+        b_evaluation    = Button(self, text='Evaluation', command=push_test)
         gs_cbutton      = Checkbutton(self, text='Grayscale', variable=greyscale)
         image           = Label(self)
         text            = Text(self) frame           = Frame(self) 
