@@ -1,0 +1,23 @@
+01:14:46 **** Auto Build of configuration Debug for project tkllHTR ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../tkllHTR_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: tkllHTR.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../tkllHTR_bsp/ps7_cortexa9_0/lib -o "tkllHTR.elf"  ./src/main.o ./src/params.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: tkllHTR.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size tkllHTR.elf  |tee "tkllHTR.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 505252	   2192	 128696	 636140	  9b4ec	tkllHTR.elf
+'Finished building: tkllHTR.elf.size'
+' '
+
+01:14:47 Build Finished (took 1s.142ms)
+

@@ -7,13 +7,16 @@ LD_SRCS += \
 ../src/lscript.ld 
 
 C_SRCS += \
-../src/main.c 
+../src/main.c \
+../src/params.c 
 
 OBJS += \
-./src/main.o 
+./src/main.o \
+./src/params.o 
 
 C_DEPS += \
-./src/main.d 
+./src/main.d \
+./src/params.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

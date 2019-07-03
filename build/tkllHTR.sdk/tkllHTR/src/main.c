@@ -62,56 +62,59 @@ int main(){
 				for (int i = 0 ; i < LAYER_INPUT ; ++i)
 					input[0][i] /= 255.0;
 
-				MUL(hidden, input,  w0);
-//				for (int i = 0; i < LEN(hidden) ; i++)
-//					for (int k = 0; k < LEN(hidden[0]) ; k++)
-//						for (int j = 0; j < LEN(w0) ; j++)
-//							hidden[i][j] += input[i][k] * w0[k][j];
+				//MUL(hidden, input,  w0);
+				for (int i = 0; i < LEN(hidden) ; i++)
+					for (int k = 0; k < LEN(hidden[0]) ; k++)
+						for (int j = 0; j < LEN(w0) ; j++)
+							hidden[i][j] += input[i][k] * w0[k][j];
 
-				ADD(hidden, hidden, b0);
-//				for (int i = 0 ; i < LEN(hidden) ; ++i)
-//					for (int j = 0 ; j < LEN(hidden[0]) ; ++j)
-//						hidden[i][j] = hidden[i][j] + b0[i][j];
+				//ADD(hidden, hidden, b0);
+				for (int i = 0 ; i < LEN(hidden) ; ++i)
+					for (int j = 0 ; j < LEN(hidden[0]) ; ++j)
+						hidden[i][j] = hidden[i][j] + b0[i][j];
 
-				RELU(hidden);
-//				for (int i = 0 ; i < LEN(hidden) ; ++i)
-//					for (int j = 0 ; j < LEN(hidden[0]) ; ++j)
-//						hidden[i][j] = (hidden[i][j] > 0 ? hidden[i][j] : 0);
-
-
+				//RELU(hidden);
+				for (int i = 0 ; i < LEN(hidden) ; ++i)
+					for (int j = 0 ; j < LEN(hidden[0]) ; ++j)
+						hidden[i][j] = (hidden[i][j] > 0 ? hidden[i][j] : 0);
 
 
-				float output[1][UNIT_LAYER_OUTPUT];
-				MUL(output, hidden, w1);
-//				for (int i = 0; i < LEN(output) ; i++)
-//					for (int k = 0; k < LEN(output[0]) ; k++)
-//						for (int j = 0; j < LEN(w1) ; j++)
-//							output[i][j] += hidden[i][k] * w1[k][j];
 
-				ADD(output, output, b1);
-//				for (int i = 0 ; i < LEN(output) ; ++i)
-//					for (int j = 0 ; j < LEN(output[0]) ; ++j)
-//						output[i][j] = output[i][j] + b1[i][j];
 
-				RELU(output);
-//				for (int i = 0 ; i < LEN(output) ; ++i)
-//					for (int j = 0 ; j < LEN(output[0]) ; ++j)
-//						output[i][j] = (output[i][j] > 0 ? output[i][j] : 0);
+				//MUL(output, hidden, w1);
+				for (int i = 0; i < LEN(output) ; i++)
+					for (int k = 0; k < LEN(output[0]) ; k++)
+						for (int j = 0; j < LEN(w1) ; j++)
+							output[i][j] += hidden[i][k] * w1[k][j];
+
+				//ADD(output, output, b1);
+				for (int i = 0 ; i < LEN(output) ; ++i)
+					for (int j = 0 ; j < LEN(output[0]) ; ++j)
+						output[i][j] = output[i][j] + b1[i][j];
+
+				//RELU(output);
+				for (int i = 0 ; i < LEN(output) ; ++i)
+					for (int j = 0 ; j < LEN(output[0]) ; ++j)
+						output[i][j] = (output[i][j] > 0 ? output[i][j] : 0);
 
 				//SOFTMAX(output);
-//			    double sum = 0;
-//				for(int i = 0 ; i < LEN(output) ; i++)
-//			    	for (int j = 0 ; j < LEN(output[0]) ; j++)
-//			            sum += (output[i][j] = exp(output[i][j]));
-//				for(int i = 0 ; i < LEN(output) ; i++)
-//			    	for (int j = 0 ; j < LEN(output[0]) ; j++)
-//			    		output[i][j] /= sum;
+			    double sum = 0;
+				for(int i = 0 ; i < LEN(output) ; i++)
+			    	for (int j = 0 ; j < LEN(output[0]) ; j++)
+			            sum += (output[i][j] = exp(output[i][j]));
+				for(int i = 0 ; i < LEN(output) ; i++)
+			    	for (int j = 0 ; j < LEN(output[0]) ; j++)
+			    		output[i][j] /= sum;
+
+//				result = 0;
+//				for (int i = 0 ; i < LEN(output[0]) ; i++)
+//					if (abs(output[0][i]) > abs(output[0][result]))
+//						result = i;
 
 				result = 0;
 				for (int i = 0 ; i < LEN(output[0]) ; i++)
-					if (abs(output[0][i]) > abs(output[0][result]))
+					if (output[0][i] > output[0][result])
 						result = i;
-
 				state = RESULT_STATE;
 				break;
 
