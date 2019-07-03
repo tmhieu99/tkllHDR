@@ -2,7 +2,8 @@ from tkinter import *
 from tkinter.filedialog import askopenfilename
 from PIL import Image, ImageTk
 from time import sleep
-from keras.datasets import mnist   #new
+from keras.datasets import mnist 
+from keras.utils import np_utils
 import cv2
 import serial
 import datetime
@@ -11,26 +12,7 @@ import numpy as np
 import glob
 import sys
 
-INPUT_SIZE = 14
-
-# Load MNIST data
-(x1, y_train), (x2, y_test) = mnist.load_data()
-x_train = np.array([cv2.resize(x1[i], (INPUT_SIZE, INPUT_SIZE), interpolation = cv2.INTER_AREA) for i in range(len(x1))])
-x_test = np.array([cv2.resize(x2[i], (INPUT_SIZE, INPUT_SIZE), interpolation = cv2.INTER_AREA) for i in range(len(x2))])
-num_classes = 10
-
-# Normalize inputs from 0-255 to 0-1
-x_train = x_train / 255
-x_test = x_test / 255
-
-# One hot encode outputs
-y_train = keras.utils.to_categorical(y_train, num_classes)
-y_test = keras.utils.to_categorical(y_test, num_classes)
-
-# Flatten
-x_train = x_train.reshape(x_train.shape[0], INPUT_SIZE*INPUT_SIZE).astype('float32')
-x_test = x_test.reshape(x_test.shape[0], INPUT_SIZE*INPUT_SIZE).astype('float32')
-
+INPUT_SIZE  = 14
 BUTTON_H    = 2
 BUTTON_W    = 20
 X           = 10
@@ -89,6 +71,24 @@ def available_ports():
     return result
 
 def push_test():
+    # Load MNIST data
+    (x1, y_train), (x2, y_test) = mnist.load_data()
+    x_train = np.array([cv2.resize(x1[i], (INPUT_SIZE, INPUT_SIZE), interpolation = cv2.INTER_AREA) for i in range(len(x1))])
+    x_test = np.array([cv2.resize(x2[i], (INPUT_SIZE, INPUT_SIZE), interpolation = cv2.INTER_AREA) for i in range(len(x2))])
+    num_classes = 10
+    
+    # Normalize inputs from 0-255 to 0-1
+    x_train = x_train / 255
+    x_test = x_test / 255
+    
+    # One hot encode outputs
+    y_train = keras.utils.to_categorical(y_train, num_classes)
+    y_test = keras.utils.to_categorical(y_test, num_classes)
+    
+    # Flatten
+    x_train = x_train.reshape(x_train.shape[0], INPUT_SIZE*INPUT_SIZE).astype('float32')
+    x_test = x_test.reshape(x_test.shape[0], INPUT_SIZE*INPUT_SIZE).astype('float32')
+
     # Get picture data in matrix form
     data = x_train
     
@@ -110,7 +110,7 @@ def push_test():
 
     correct = 0
     for i in range (10000):
-        ser.write(converted_data[196i:196i+195])
+        ser.write(converted_data[196*i:196*i+195])
         predict = ser.readline()
         if predict[len(predict)-2] == y_test[i]:
             correct += 1
@@ -252,7 +252,8 @@ class App(Frame):
         b_evaluation    = Button(self, text='Evaluation', command=push_test)
         gs_cbutton      = Checkbutton(self, text='Grayscale', variable=greyscale)
         image           = Label(self)
-        text            = Text(self) frame           = Frame(self) 
+        text            = Text(self)
+        frame           = Frame(self) 
 
         port_menu.config(bg = 'white', width=BUTTON_W*90//100)
         port_menu.bind("<Button-1>", update_ports)
