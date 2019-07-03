@@ -138,7 +138,7 @@
 %--------------------------------------------- MAIN CONTENT ---------------------------------------------%
     \section{Introduction}
     	\subsection{Project}
-    		The target is to implement a Handwritten Digits Recognition system using Machine learning based on the Zedboard FPGA development kit. The tool used to program the Zedboard is the Xilinx Vivado High-Level Synthesis (HLS). The project is built based on two programing languages: Python and C.
+    		The project is targeted to implement a Handwritten Digits Recognition system using Machine Learning algorithms on the Zedboard FPGA development kit. Tools and softwares used to program the Zedboard are Vivado Design Suite and Xilinx SDK. The project includes hardware and software parts and is built based on two main programing languages: Python and C.
     	
     	\subsection{Zedboard}
     		ZedBoard™ is a complete development kit for designers using Xilinx Zynq®-7000 All Programmable SoC. The board provides various interfaces such as USB-JTAG Programming, USB OTG 2.0, USB-UART bridge, SD card and so on.  Combining a dual Corex-A9 Processing System (PS) with Programmable Logic (PL) cells, the Zedboard can be targeted  to use in many applications. 
@@ -152,17 +152,17 @@
 	    	\end{figure}
     	
     	\subsection{MNIST Database}
-    		The dataset consists of 60000 digits for the training set and 10000 examples for the test set. Each digit have been size-normalized and centered in a fixed-size 28x28 pixel image. 
-    			\begin{figure}[tbh!]
-    				\begin{center}
-    					\includegraphics[scale=0.25]{MNIST.png}
-    					\caption{MNIST Database}
-    					\label{fig:MNIST Database}
-    				\end{center}
-    			\end{figure}
+    		MNIST database might be one of the most familiar material with Machine Learning learners all around the world. This is the database of handwritten digits which is often used as a benchmark to validate algorithms. The dataset consists of 60000 digits for the training set and 10000 examples for the test set. Each digit have been size-normalized and centered in a fixed-size 28x28 pixel image. However, the size of images used in this project is scaled down to 14x14 for the reason of memory limitation in Zedboard embedded system. 
+    		\begin{figure}[tbh!]
+    			\begin{center}
+    				\includegraphics[scale=0.25]{MNIST.png}
+    				\caption{MNIST Database}
+    				\label{fig:MNIST Database}
+    			\end{center}
+    		\end{figure}
     		
     	\subsection{Algorithm}
-    		In this project, the implementation of the system is based on Perceptron Learning Algorithm (PLA) - an algorithm for supervised learning of binary classifiers. A binary classifier is a function which can decide whether or not an input, represented by a vector of numbers, belongs to some specific class. 
+            In this project, the Machine Learning model we use is Multilayer Perceptron (MLP). A feedforward artificial neural network that generates a set of outputs from a set of inputs. An MLP is characterized by several layers of input nodes connected as a directed graph between the input and output layers. MLP uses backpropogation for training the network. 
     		
     \section{Methods}
     	\subsection{Pre-processing}
@@ -200,6 +200,12 @@
     	The source code of the project: \url{https://github.com/dangne/tkllHTR/}
     	
     \section{Discussion}
+        \subsection{Future Work}
+            \subsubsection{Extension}
+            \subsubsection{Optimization}
+                So far, what our group has achieved is just bare surface of Xilinx technology in general and Zedboard to be specific. Many possibilities and optimizations are able to be performed, one particular example of such is \textbf{Hardware acceleration}. By utilizing the power of parallel computing in hardware, performance of the system can be further improved. 
+        \subsection{}
+
     
     
 	\begin{thebibliography}{9}
