@@ -8,6 +8,7 @@ from keras.datasets import mnist
 from keras.layers import Dense, Flatten
 from keras.models import Sequential
 from keras.utils.vis_utils import plot_model
+
 # Load MNIST data
 (x1, y_train), (x2, y_test) = mnist.load_data()
 x_train = np.array([cv2.resize(x1[i], (INPUT_SIZE, INPUT_SIZE), interpolation = cv2.INTER_AREA) for i in range(len(x1))])

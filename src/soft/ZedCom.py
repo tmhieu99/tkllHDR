@@ -2,11 +2,32 @@ from tkinter import *
 from tkinter.filedialog import askopenfilename
 from PIL import Image, ImageTk
 from time import sleep
+from keras.datasets import mnist   #new
 import cv2
 import serial
 import numpy as np
 import glob
 import sys
+
+INPUT_SIZE = 14
+
+# Load MNIST data
+(x1, y_train), (x2, y_test) = mnist.load_data()
+x_train = np.array([cv2.resize(x1[i], (INPUT_SIZE, INPUT_SIZE), interpolation = cv2.INTER_AREA) for i in range(len(x1))])
+x_test = np.array([cv2.resize(x2[i], (INPUT_SIZE, INPUT_SIZE), interpolation = cv2.INTER_AREA) for i in range(len(x2))])
+num_classes = 10
+
+# Normalize inputs from 0-255 to 0-1
+x_train = x_train / 255
+x_test = x_test / 255
+
+# One hot encode outputs
+y_train = keras.utils.to_categorical(y_train, num_classes)
+y_test = keras.utils.to_categorical(y_test, num_classes)
+
+# Flatten
+x_train = x_train.reshape(x_train.shape[0], INPUT_SIZE*INPUT_SIZE).astype('float32')
+x_test = x_test.reshape(x_test.shape[0], INPUT_SIZE*INPUT_SIZE).astype('float32')
 
 MARGIN_L        = 10
 MARGIN_T        = 10
@@ -55,6 +76,36 @@ def available_ports():
             pass
     if len(result) == 0: result.append("None")
     return result
+
+def push_test():
+    # Get picture data in matrix form
+    data = x_train
+    
+    # Flatten the matrix to a 1D-vector 784 long
+    #data = data.reshape(data.shape[0]*data.shape[1])
+    
+    # Convert list to string with leading zeros to fit the data data format
+    converted_data = ''
+    for i in range(len(data)):
+        if i != 0: converted_data = converted_data + ","
+        converted_data = converted_data + str(data[i])
+
+    # Convert to byte string
+    converted_data = converted_data.encode('ascii') + b'\n'
+
+    #print(converted_data)
+
+    # Send data to Zedboard
+
+    correct = 0
+    for i in range (10000):
+        ser.write(converted_data[196i:196i+195])
+        predict = ser.readline()
+        if predict[len(predict)-2] == y_test[i]:
+            correct += 1
+
+    accuracy = correct / 10000
+
 
 def import_image():
     filename = askopenfilename( initialdir = "../data/",
@@ -148,6 +199,7 @@ def new_checkbutton(root, x, y, txt, var, w = CBUTTON_WIDTH, h = CBUTTON_HEIGHT)
     checkbutton.place(x = x, y = y)
     checkbutton.select()
     return checkbutton
+
 
 if __name__ == "__main__":
     # Setup window
