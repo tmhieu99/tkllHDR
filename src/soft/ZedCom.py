@@ -4,25 +4,36 @@ from PIL import Image, ImageTk
 from time import sleep
 import cv2
 import serial
+import datetime
+import matplotlib.pyplot as plt 
 import numpy as np
 import glob
 import sys
 
-MARGIN_L        = 10
-MARGIN_T        = 10
-BUTTON_HEIGHT   = 2
-BUTTON_WIDTH    = 20
-CBUTTON_HEIGHT  = 2
-CBUTTON_WIDTH   = 17
-TEXTBOX_HEIGHT  = 22
-TEXTBOX_WIDTH   = 50
-MENU_HEIGHT     = 1
-MENU_WIDTH      = 15
+BUTTON_H    = 2
+BUTTON_W    = 20
+X           = 10
+Y           = 10
+INPUT_SIZE  = (14, 14)
+IMG_SIZE    = (180, 180)
 
 class Picture:
     def __init__(self, image_name, greyscale = True):
         self.image_cv = cv2.imread(image_name, 0)
+        self.image_cv = image_processing(self.image_cv)
+
+        # Record result
+        t = datetime.datetime.now()
+        filename = "../../data/result"
+        for i in [t.day, t.month, t.year, t.hour, t.minute, t.second, 'jpg']:
+            filename += '.' + str(i)
+        cv2.imwrite(filename, self.image_cv)
+        self.image_cv = cv2.imread(filename, 0)
+
+        print(self.image_cv)
+
         self.image_tk = cv2.imread(image_name, not greyscale)
+        self.image_tk = cv2.resize(self.image_tk, IMG_SIZE, interpolation = cv2.INTER_AREA)
         if not greyscale:
             b, g, r = cv2.split(self.image_tk)
             self.image_tk = cv2.merge((r, g, b))
@@ -56,20 +67,68 @@ def available_ports():
     if len(result) == 0: result.append("None")
     return result
 
+def crop_image(img):
+    img, contours, hierarchy = cv2.findContours(img, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+    region = (0, 0, 0, 0)
+    max_area = 0
+    for cont in contours:
+        x, y, w, h = cv2.boundingRect(cont)
+        area = w*h
+        if area > max_area:
+            region = x,y,w,h
+            max_area = area
+    x, y, w, h = region
+    
+    roi = img[y:y+h,x:x+w]
+
+    size = int(max(w, h)*1.4)
+    x2 = (size - w)//2
+    y2 = (size - h)//2
+    res = np.zeros((size, size))
+    res[y2:y2+h, x2:x2+w] = roi
+    return res
+
+def image_processing(res):
+    # Blur image
+    res = cv2.GaussianBlur(res,(9, 9), 1) 
+
+    # Noise reduction
+    res = cv2.fastNlMeansDenoising(res, res, 3, 7, 21)
+    
+    # Apply adaptive thresholding
+    res = cv2.adaptiveThreshold(res, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
+    
+    # Inverse image
+    res = cv2.bitwise_not(res, res)
+
+    # Remove white blobs
+    kernel = np.ones((2, 2), np.uint8)
+    res = cv2.morphologyEx(res, cv2.MORPH_OPEN, kernel)
+
+    # Crop image
+    res = crop_image(res)
+    
+    # Dilate image
+    kernel = np.ones((5, 5), np.uint8)
+    res = cv2.dilate(res,kernel,iterations = 1)
+
+    # Scale image
+    res = cv2.resize(res, INPUT_SIZE, interpolation = cv2.INTER_AREA)
+    
+    # Final result
+    return res
+
 def import_image():
-    filename = askopenfilename( initialdir = "../data/",
+    filename = askopenfilename( initialdir = "../../data/raw",
                                 initialfile = "",
                                 filetypes = (("All Files", "*"),
                                             ("Text File", "*.txt")),
                                 title = "Choose image")
     if len(filename) > 0:
-        try:
-            global subject 
-            global image
-            subject = Picture(filename, greyscale.get())
-            image.config(image = subject.obj())
-        except:
-            print("Invalid image type")
+        global subject 
+        global image
+        subject = Picture(filename, greyscale.get())
+        image.config(image = subject.obj())
   
 def update_text(data):
     print(data)
@@ -97,11 +156,10 @@ def push_image(ser):
     ser.write(converted_data)
 
     # Wait for result
-    #x = ser.readline()
-    #x = ser.readlines()
+    x = ser.readline()
 
     # Show result on screen
-    #update_text(x)
+    update_text(x)
 
 def connect(port):
     if port == "None": return
@@ -121,56 +179,62 @@ def update_ports(event):
     selected_port.set(port_list[0])
     ser = connect(selected_port.get())
 
-def new_menu(root, x, y, selected_port, port_list, cmd, w = MENU_WIDTH, h = MENU_HEIGHT, bg = 'white'):
-    menu = OptionMenu(root, selected_port, *port_list)
-    menu.config(bg = bg, width = w, height = h)
-    menu.bind("<Button-1>", cmd)
-    menu.place(x = x, y = y)
-    return menu
+class App(Frame):
+    def __init__(self):
+        super().__init__()
+        self.initUI()
 
-def new_image(root, x, y):
-    image = Label(root)
-    image.place(x = x, y = y)
-    return image
+    def initUI(self):
 
-def new_textbox(root, x, y, w = TEXTBOX_WIDTH, h = TEXTBOX_HEIGHT):
-    textbox = Text(root, width = TEXTBOX_WIDTH, height = TEXTBOX_HEIGHT)
-    textbox.place(x = x, y = y)
-    return textbox
+        self.master.title("Windows")
+        self.pack(fill=BOTH, expand=True)
 
-def new_button(root, x, y, txt, cmd, w = BUTTON_WIDTH, h = BUTTON_HEIGHT, bg = 'white'):
-    button = Button(root, width = w, height = h, bg = bg, text = txt, command = cmd)
-    button.place(x = x, y = y)
-    return button
+        self.columnconfigure(1, weight=10)
+        self.columnconfigure(3, pad=5)
+        self.rowconfigure(3, weight=10)
+        self.rowconfigure(5, pad=5)
 
-def new_checkbutton(root, x, y, txt, var, w = CBUTTON_WIDTH, h = CBUTTON_HEIGHT):
-    checkbutton = Checkbutton(root, width = w, height = h, variable = var, text = txt)
-    checkbutton.place(x = x, y = y)
-    checkbutton.select()
-    return checkbutton
+        global port_menu
+        global image
+        port_menu       = OptionMenu(self, selected_port, *port_list)
+        b_import        = Button(self, text='Import image', command=import_image)
+        b_push          = Button(self, text='Push image', command=lambda:push_image(ser))
+        b_evaluation    = Button(self, text='Evaluation')
+        gs_cbutton      = Checkbutton(self, text='Grayscale', variable=greyscale)
+        image           = Label(self)
+        text            = Text(self)
+        frame           = Frame(self)
 
-if __name__ == "__main__":
-    # Setup window
-    root = Tk()
-    root.title('Zedboard Communicator')
-    root.geometry('635x400')
-    root.resizable(False, False)
-    
-    # Variables
-    ser = None
-    greyscale = BooleanVar()
-    port_list = available_ports()
-    selected_port = StringVar(root)
-    selected_port.set(port_list[0])
-    ser = connect(selected_port.get()) 
-     
-    # Widgets
-    port_menu   = new_menu(root, MARGIN_L-3, MARGIN_T-1, selected_port, port_list, update_ports)
-    b_import    = new_button(root, MARGIN_L, 60, 'Import image', import_image)
-    b_push      = new_button(root, MARGIN_L, 110, 'Push image', lambda: push_image(ser))
-    gs_cbutton  = new_checkbutton(root, MARGIN_L, 160, 'Greyscale', greyscale)
-    image       = new_image(root, 70, 220)
-    text        = new_textbox(root, 170, MARGIN_T)
-    
-    # Main loop
-    root.mainloop()
+
+        port_menu.config(bg = 'white', width=BUTTON_W*90//100)
+        port_menu.bind("<Button-1>", update_ports)
+        gs_cbutton.select()
+        b_import.config(bg='white', width=BUTTON_W, height=BUTTON_H)
+        b_push.config(bg='white', width=BUTTON_W, height=BUTTON_H)
+        b_evaluation.config(bg='white', width=BUTTON_W, height=BUTTON_H)
+
+
+        port_menu.      grid(row=0, column=0, padx=X, pady=Y)
+        b_import.       grid(row=1, column=0, padx=X)
+        b_push.         grid(row=2, column=0, padx=X)
+        b_evaluation.   grid(row=3, column=0, padx=X, pady=15, sticky=N)
+        gs_cbutton.     grid(row=4, column=0, padx=X, sticky=N)
+        image.          grid(row=5, column=0, padx=X, pady=Y)
+        text.           grid(row=0, column=1, rowspan=6, pady=Y, sticky=E+W+S+N)
+        frame.          grid(row=0, column=2, rowspan=5, padx=X//2)
+
+# Setup window
+root = Tk()
+root.geometry("760x500")
+root.resizable(False, False)
+
+# Variables
+ser = None
+greyscale = BooleanVar()
+port_list = available_ports()
+selected_port = StringVar(root)
+selected_port.set(port_list[0])
+ser = connect(selected_port.get()) 
+
+app = App()
+root.mainloop()
